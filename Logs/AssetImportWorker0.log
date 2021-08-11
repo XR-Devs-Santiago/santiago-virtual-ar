@@ -308,3 +308,11 @@ Received Import Request.
 Start importing Assets/Prefabs using Guid(2f76b4dd4238340fb98e1e00e275e2cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df58d51d5482a77a718d41a25e0a6e89') in 0.001440 seconds 
   Import took 0.005504 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 284.630828 seconds.
+  path: Assets/New Folder
+  artifactKey: Guid(89e362e197e7945008947d4e0b7f6a01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder using Guid(89e362e197e7945008947d4e0b7f6a01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00c042025681a5acd6ae4be948caf019') in 0.001822 seconds 
+  Import took 0.004906 seconds .
+
