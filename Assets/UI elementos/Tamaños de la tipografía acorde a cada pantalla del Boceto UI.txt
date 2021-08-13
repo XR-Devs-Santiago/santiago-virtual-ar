@@ -1,0 +1,35 @@
+		Tamaños de la tipografía:
+
+- - - > Pantalla Splash e Inicio:
+Título: 72px, medium y regular.
+Descripción: 45px, medium.
+Texto botón: 45px, semibold.
+
+- - - > Pantalla Alerta usuario
+Texto alerta: 40px, medium.
+
+- - - > Pantalla Principal: 
+Texto pin: 
+	Santiago: 35px, Black.
+	Rep. Dom.: 30px, semibold
+
+- - - > Pantalla Datos Curiosos: 
+Titulo: 45px, bold.
+Texto: 36px, regular. 
+
+- - - > Pantalla lugar seleccionado: 
+Titulo: 45px, semibold.
+Texto: 34px, regular. 
+
+- - - > Pantalla interaccion de botones (TODAS)
+Titulos: 45px, semibold.
+Subtitulos: 40px, semibold
+Textos 1: 40px, regular. 
+Textos 2: 30px, semibold. (Estos son los textos mas pequeños que van junto a los subtitulos de los datos del personaje o el lugar)
+
+
+
+
+
+
+
