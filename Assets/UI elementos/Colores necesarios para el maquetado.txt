@@ -1,0 +1,30 @@
+Recursos para el maquetado
+
+- - - > Colores
+
+Texto del logotipo  y Descripcion - Pantalla de inicio
+000000 alpha 75
+
+Imagen de fondo
+alpha 6%
+
+Textos de informacion (Pantallas de  interaccion de botones, modelo seleccionado)
+#595959
+#999999
+
+Subtítulos 1
+#000000 alpha 82%
+
+Subtítulos 2 y Titulos
+#1B3C5B
+#1B3C5A
+
+Para los fondos, headers y texto de la pantalla de alerta:
+#FFFFFF
+
+Botones siguiente/anterior
+Boton ctivo - #1B3C5B
+Boton desactivo - #1B3C5B alpha 56%
+
+
+- - - - - - - - - - - - - - > 
