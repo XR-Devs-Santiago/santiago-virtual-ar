@@ -1158,7 +1158,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61815f7394f774350b406b4139a3509d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monumento: {fileID: 0}
   centroLeon: {fileID: 8382622211596489535, guid: 7a9a9eef2ef6bc446a3a7a841d082d68,
     type: 3}
 --- !u!4 &755974508
