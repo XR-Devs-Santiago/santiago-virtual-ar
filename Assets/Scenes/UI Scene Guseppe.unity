@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -293,7 +293,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'En 1660 Santiago fue saqueada por el pirata Fernand de la Fleur. '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2f19b1e7c6f622e4cacb37e4bbe8bce9, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: -2581176588852005526, guid: 2f19b1e7c6f622e4cacb37e4bbe8bce9,
     type: 2}
   m_fontSharedMaterials: []
@@ -867,7 +867,7 @@ MonoBehaviour:
     y se dice que pertenec\xEDan a la antigua orden de caballer\xEDa del Ap\xF3stol
     Santiago.\r\n\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2f19b1e7c6f622e4cacb37e4bbe8bce9, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: -2581176588852005526, guid: 2f19b1e7c6f622e4cacb37e4bbe8bce9,
     type: 2}
   m_fontSharedMaterials: []
@@ -960,7 +960,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &643540602
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1011,9 +1011,8 @@ MonoBehaviour:
     Guti\xE9rrez de la Cova\r\n-Gonzalo Bernal\r\n-Tom\xE1s Garc\xEDa de Herrera\r\n-Francisco
     de Leza\r\n-Diego Minaya\r\n\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2f19b1e7c6f622e4cacb37e4bbe8bce9, type: 2}
-  m_sharedMaterial: {fileID: -2581176588852005526, guid: 2f19b1e7c6f622e4cacb37e4bbe8bce9,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1791,6 +1790,89 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1005847965}
   m_CullTransparentMesh: 1
+--- !u!1 &1011330171
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1011330174}
+  - component: {fileID: 1011330173}
+  - component: {fileID: 1011330172}
+  m_Layer: 0
+  m_Name: Main Camera (1)
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &1011330172
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011330171}
+  m_Enabled: 1
+--- !u!20 &1011330173
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011330171}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &1011330174
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011330171}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1201685202
 GameObject:
   m_ObjectHideFlags: 0
@@ -1901,6 +1983,51 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1375390971
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1375390972}
+  - component: {fileID: 1375390973}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1375390972
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375390971}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1375390973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375390971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0397c0a808f6bc34292f78ea47d03f5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  content_panel: {fileID: 816842471}
+  panel_datos_curiosos: {fileID: 2713867284793846422}
 --- !u!1 &1380323074
 GameObject:
   m_ObjectHideFlags: 0
@@ -1961,7 +2088,7 @@ MonoBehaviour:
   m_text: "Crist\xF3bal Col\xF3n, en 1495 funda, en el primer viaje,  el fuerte de
     Santiago, en la ribera norte del r\xEDo Yaque del Norte."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2f19b1e7c6f622e4cacb37e4bbe8bce9, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: -2581176588852005526, guid: 2f19b1e7c6f622e4cacb37e4bbe8bce9,
     type: 2}
   m_fontSharedMaterials: []
@@ -2096,9 +2223,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "En 1891 sali\xF3 el primer peri\xF3dico diario de Santiago, El D\xEDa.\r\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2f19b1e7c6f622e4cacb37e4bbe8bce9, type: 2}
-  m_sharedMaterial: {fileID: -2581176588852005526, guid: 2f19b1e7c6f622e4cacb37e4bbe8bce9,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2504,7 +2630,7 @@ MonoBehaviour:
   m_text: "Santiago de los Caballeros es tambi\xE9n llamado el primer Santiago de
     Am\xE9rica."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2f19b1e7c6f622e4cacb37e4bbe8bce9, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: -2581176588852005526, guid: 2f19b1e7c6f622e4cacb37e4bbe8bce9,
     type: 2}
   m_fontSharedMaterials: []
@@ -2751,7 +2877,7 @@ MonoBehaviour:
     gran parte de su territorio, por lo que fue reubicada de nuevo a orillas del
     r\xEDo Yaque del Norte, donde actualmente est\xE1 localizada."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2f19b1e7c6f622e4cacb37e4bbe8bce9, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: -2581176588852005526, guid: 2f19b1e7c6f622e4cacb37e4bbe8bce9,
     type: 2}
   m_fontSharedMaterials: []
@@ -3008,7 +3134,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &2713867284793846424
 GameObject:
   m_ObjectHideFlags: 0
@@ -3313,7 +3439,7 @@ MonoBehaviour:
   m_text: "Durante la guerra de la restauraci\xF3n, entre el a\xF1o 1893 y 1895,
     Santiago de los caballeros fue capital de Rep\xFAblica Dominicana."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2f19b1e7c6f622e4cacb37e4bbe8bce9, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: -2581176588852005526, guid: 2f19b1e7c6f622e4cacb37e4bbe8bce9,
     type: 2}
   m_fontSharedMaterials: []
@@ -3497,9 +3623,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\xBFSab\xEDas que..."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4bc32775222792b459860a9d03f94f73, type: 2}
-  m_sharedMaterial: {fileID: 4751731391365522377, guid: 4bc32775222792b459860a9d03f94f73,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
