@@ -2206,7 +2206,7 @@ GameObject:
   - component: {fileID: 1375390972}
   - component: {fileID: 1375390973}
   m_Layer: 0
-  m_Name: Manager
+  m_Name: DatosCuriososManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

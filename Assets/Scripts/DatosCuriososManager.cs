@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Manager : MonoBehaviour
+public class DatosCuriososManager : MonoBehaviour
 {
 	public GameObject content_panel, panel_datos_curiosos;
 	// Start is called before the first frame update
