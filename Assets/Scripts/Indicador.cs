@@ -12,6 +12,7 @@ public class Indicador : MonoBehaviour
 	GameObject elMapa;
 	// Panel de mensaje AR
 	public GameObject panelMensajeAR;
+	public GameObject instanciador;
 
 
     private void Start()
@@ -38,7 +39,9 @@ public class Indicador : MonoBehaviour
             transform.position = hit[0].pose.position;
             transform.rotation = hit[0].pose.rotation;
 	        elMapa.SetActive(true);
-	        // Si el mapa es activve entonces desactiva mensaje AR
+	        //  Activamos el instanciador ahora ya que ahora si se necesita que active los modelos 3d al tocar la pantalla y no antes.
+	        instanciador.SetActive(true);
+	        // Si el mapa esta activo entonces desactivo pantalla de buscando suelo.
 	        panelMensajeAR.SetActive(false);
         }
     }
