@@ -81,8 +81,10 @@ crashlytics-build.properties
 [Aa]ssets/[Ss]treamingAssets/a
 *.log~main
 *.log
+Logs/
 Logs/AssetImportWorker0-prev.log
 Logs/AssetImportWorker0-prev.log
 Logs/AssetImportWorker0.log
+Logs/ApiUpdaterCheck.txt
 Logs/shadercompiler-AssetImportWorker0.log
 
