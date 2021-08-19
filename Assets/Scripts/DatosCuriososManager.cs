@@ -33,6 +33,7 @@ public class DatosCuriososManager : MonoBehaviour
 			}
 		}
 	}
+	
 	public void cerrar_panel_datos_cuiosos()
 	{
 		panel_datos_curiosos.SetActive(false);
