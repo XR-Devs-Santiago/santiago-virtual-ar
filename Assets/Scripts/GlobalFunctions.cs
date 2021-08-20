@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class GlobalValues
+public static class GlobalFunctions
 {
-	public static Modelos modelo_seleccionado;
 	//función que desactiva todos los hijos de un padre dado
 	public static void desactivar_hijos(Transform padre)
 	{

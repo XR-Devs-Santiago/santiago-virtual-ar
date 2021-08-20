@@ -10,7 +10,7 @@ public class DatosCuriososManager : MonoBehaviour
 	// Start is called on the frame when a script is enabled just before any of the Update methods is called the first time.
 	protected void Start()
 	{
-		GlobalValues.modelo_seleccionado = Modelos.parque_central;
+		ValoresGlobales.modelo_seleccionado = Modelos.centro_leon;
 		//activar_datos_curiosos();
 	}
 
@@ -27,7 +27,7 @@ public class DatosCuriososManager : MonoBehaviour
 		if(dato_curioso != null)
 		{
 			/*se desactivan todos los mensajes de datos curiosos por si quedó uno activo en una ejecución anterior*/
-			GlobalValues.desactivar_hijos(content_panel.transform);
+			GlobalFunctions.desactivar_hijos(content_panel.transform);
 			//se activa el dato curioso
 			dato_curioso.gameObject.SetActive(true);
 			//se activa el panel de datos curiosos para poder visualizar el mensaje
