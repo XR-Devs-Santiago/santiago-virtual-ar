@@ -6,17 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/AR Inicial.unity
-    guid: 5f38c47bcf33b47f6ad565c533743143
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/new red.unity
-    guid: 9543e5ab9fdc7436e96f2c80d9e1975b
-  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: Assets/Scenes/AR Inicial.unity
     guid: ea6141b245ef4465d8938ba16d4fa1dc
+  - enabled: 1
+    path: Assets/Scenes/UI scene (enmanuel).unity
+    guid: dd628fa0f3e50a747b90eba5e8b15054
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 25c4779b8185a4ad196e71ca7bc0999d,
       type: 2}
