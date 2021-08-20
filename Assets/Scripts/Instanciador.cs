@@ -35,10 +35,13 @@ public class Instanciador : MonoBehaviour
         // toco la pantalla para instanciar un objecto
         if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
         {
-        	
-	        Destroy(obj1, 0f);
-	        // Instancear al modelo del centro leon
-	        obj1 = Instantiate(centroLeon, ElIndicador.transform.position, ElIndicador.transform.rotation);
+        	// Solo instanceamos una vez
+        	if (obj1 == null) {
+	        	Destroy(obj1, 0f);
+	        	// Instancear al modelo del centro leon
+	        	obj1 = Instantiate(centroLeon, ElIndicador.transform.position, ElIndicador.transform.rotation);
+        	}
+	       
         }
     }
 }
