@@ -54817,6 +54817,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2713867284793846441}
+  - component: {fileID: 2713867284793846423}
   m_Layer: 5
   m_Name: PanelDatosCuriosos
   m_TagString: Untagged
@@ -54824,6 +54825,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!114 &2713867284793846423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2713867284793846422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0397c0a808f6bc34292f78ea47d03f5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  content_panel: {fileID: 0}
+  panel_datos_curiosos: {fileID: 0}
 --- !u!1 &2713867284793846424
 GameObject:
   m_ObjectHideFlags: 0

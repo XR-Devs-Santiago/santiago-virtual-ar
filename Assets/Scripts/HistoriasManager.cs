@@ -14,6 +14,12 @@ public class HistoriasManager : MonoBehaviour
 	public GameObject boton_personajes, conoce_sus_personajes;
 	//Variables para el contenido de panel de personajes
 	public GameObject aurora_content_personajes, monumento_content_personajes;
+	
+	// Start is called on the frame when a script is enabled just before any of the Update methods is called the first time.
+	protected void Start()
+	{
+		activar_panel_historia();
+	}
 	public void activar_panel_historia()
 	{
 		//validamos el botón personajes
