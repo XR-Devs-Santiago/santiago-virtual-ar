@@ -12,7 +12,8 @@ public class HistoriasManager : MonoBehaviour
 	public GameObject panel_historias, panel_historia_content;
 	//variables para el botón de personajes y el texto conoce sus personajes
 	public GameObject boton_personajes, conoce_sus_personajes;
-	
+	//Variables para el contenido de panel de personajes
+	public GameObject aurora_content_personajes, monumento_content_personajes;
 	public void activar_panel_historia()
 	{
 		//validamos el botón personajes
@@ -83,6 +84,7 @@ public class HistoriasManager : MonoBehaviour
 	{
 		var manager = GameObject.FindObjectOfType<Manager>();
 		manager.mostrarPanel(manager.panelModeloSeleccionado);
+		activar_modelo_seleccionado();
 	}
 	//función que determinar si el botón personaajes debe mostrarse o no
 	void validar_boton_personajes()
@@ -97,6 +99,70 @@ public class HistoriasManager : MonoBehaviour
 		{
 			boton_personajes.SetActive(false);	
 			conoce_sus_personajes.SetActive(false);
+		}
+	}
+	void activar_modelo_seleccionado()
+	{
+		var manager = GameObject.FindObjectOfType<Manager>();
+		switch(ValoresGlobales.modelo_seleccionado)
+		{
+			case Modelos.aurora:
+				manager.panelModeloAurora.SetActive(true);
+				break;
+			case Modelos.camp_david:
+				manager.panelModeloCampDavid.SetActive(true);
+				break;
+			case Modelos.catedral:
+				manager.panelModeloCatedral.SetActive(true);
+				break;
+			case Modelos.centro_de_la_cultura:
+				manager.panelModeloCatedral.SetActive(true);
+				break;
+			case Modelos.centro_leon:
+				manager.panelModeloCentroLeon.SetActive(true);
+				break;
+			case Modelos.estadio_cibao:
+				manager.panelModeloEstadio.SetActive(true);
+				break;
+			case Modelos.matum:
+				manager.panelModeloMatum.SetActive(true);
+				break;
+			case Modelos.monumento:
+				manager.panelModeloMonumento.SetActive(true);
+				break;
+			case Modelos.parque_central:
+				manager.panelModeloParqueCentral.SetActive(true);
+				break;
+			case Modelos.teatro:
+				manager.panelModeloTeatro.SetActive(true);
+				break;
+			case Modelos.fortaleza:
+				manager.panelModeloFortaleza.SetActive(true);
+				break;
+		}
+	}
+	public void mostrar_personajes()
+	{
+		var manager = GameObject.FindObjectOfType<Manager>();
+		manager.mostrarPanel(manager.panelPersonajes);
+		activar_personajes();
+	}
+	void activar_personajes()
+	{
+		switch(ValoresGlobales.modelo_seleccionado)
+		{
+			case Modelos.centro_leon:
+				aurora_content_personajes.SetActive(true);
+				monumento_content_personajes.SetActive(false);
+				break;
+			case Modelos.aurora:
+				aurora_content_personajes.SetActive(true);
+				monumento_content_personajes.SetActive(false);
+				break;
+			case	Modelos.monumento:
+				monumento_content_personajes.SetActive(true);
+				aurora_content_personajes.SetActive(false);
+				break;
 		}
 	}
 	
