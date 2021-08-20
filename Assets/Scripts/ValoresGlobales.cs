@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class ValoresGlobales : MonoBehaviour
 {
+	
+	public static Modelos modelo_seleccionado;
+	
+}
+
 	public enum Modelos
 	{
 		estadio_cibao,
@@ -20,6 +25,5 @@ public class ValoresGlobales : MonoBehaviour
 	}
 
 	
-	public static Modelos modelo_seleccionado;
 
-}
+
