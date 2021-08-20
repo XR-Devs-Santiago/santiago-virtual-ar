@@ -17,9 +17,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/AR Inicial.unity
     guid: ea6141b245ef4465d8938ba16d4fa1dc
+  - enabled: 0
+    path: Assets/Scenes/AR Inicial - Manny.unity
+    guid: 9fc522d5ce903447fbadd2c3bb0dd370
+  - enabled: 0
+    path: Assets/Scenes/UI Scene Guseppe.unity
+    guid: da76a5849e9d1c648a0eee1abe7e8ccd
   - enabled: 1
-    path: Assets/Scenes/UI scene (enmanuel).unity
-    guid: dd628fa0f3e50a747b90eba5e8b15054
+    path: Assets/Scenes/AR Main Scene.unity
+    guid: 50389c3556e694d839c80f6b0de600a1
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 25c4779b8185a4ad196e71ca7bc0999d,
       type: 2}

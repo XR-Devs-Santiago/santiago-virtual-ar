@@ -1,15 +1,25 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Instanciador : MonoBehaviour
 {
     // Objecto a instanciar
-    public GameObject elObjecto;
+	public GameObject centroLeon;
+	//public GameObject monumento;
+	//public GameObject catedral;
+	//public GameObject hotelMatum;
+	//public GameObject auroraCigar;
+	//public GameObject estadioCibao;
+	//public GameObject centroDeLaCultura;
+	//public GameObject fortalezaSanLuis;
+	//public GameObject campDavid;
+	//public GameObject parqueCentral;
 
-    // el indicador, donde lo instanciamos
+	// El indicador, donde lo instanciamos
     Indicador ElIndicador;
-    GameObject obj;
+	GameObject obj1;
+	// GameObject obj2;
 
     int spawned = 0;
 
@@ -25,11 +35,10 @@ public class Instanciador : MonoBehaviour
         // toco la pantalla para instanciar un objecto
         if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
         {
-
-            Destroy(obj, 0f);
-            obj = Instantiate(elObjecto, ElIndicador.transform.position, ElIndicador.transform.rotation);
-
-
+        	
+	        Destroy(obj1, 0f);
+	        // Instancear al modelo del centro leon
+	        obj1 = Instantiate(centroLeon, ElIndicador.transform.position, ElIndicador.transform.rotation);
         }
     }
 }

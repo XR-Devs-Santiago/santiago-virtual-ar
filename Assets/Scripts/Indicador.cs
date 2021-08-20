@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
@@ -9,16 +9,20 @@ public class Indicador : MonoBehaviour
     // Emisor de rayos
     ARRaycastManager losRayos;
     // punto
-    GameObject elPunto;
+	GameObject elMapa;
+	// Panel de mensaje AR
+	public GameObject panelMensajeAR;
+	public GameObject instanciador;
+
 
     private void Start()
     {
         // Encuentro el objeto con el componente ArRaycastManager
         losRayos = FindObjectOfType<ARRaycastManager>();
         // Busco al punto como mi primer hijo
-        elPunto = transform.GetChild(0).gameObject;
+        elMapa = transform.GetChild(0).gameObject;
 
-        elPunto.SetActive(false);
+        elMapa.SetActive(false);
     }
 
     private void Update()
@@ -34,7 +38,11 @@ public class Indicador : MonoBehaviour
         {
             transform.position = hit[0].pose.position;
             transform.rotation = hit[0].pose.rotation;
-            elPunto.SetActive(true);
+	        elMapa.SetActive(true);
+	        //  Activamos el instanciador ahora ya que ahora si se necesita que active los modelos 3d al tocar la pantalla y no antes.
+	        instanciador.SetActive(true);
+	        // Si el mapa esta activo entonces desactivo pantalla de buscando suelo.
+	        panelMensajeAR.SetActive(false);
         }
     }
 }
