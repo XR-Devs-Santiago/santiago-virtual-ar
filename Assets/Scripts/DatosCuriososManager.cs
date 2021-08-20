@@ -4,35 +4,38 @@ using UnityEngine;
 
 public class DatosCuriososManager : MonoBehaviour
 {
+	//variables del panel de contenido de datos curiosos y panel de datos curiosos
 	public GameObject content_panel, panel_datos_curiosos;
-	// Start is called before the first frame update
-    void Start()
+	
+	// Start is called on the frame when a script is enabled just before any of the Update methods is called the first time.
+	protected void Start()
 	{
-	    var random = new System.Random();
+		GlobalValues.modelo_seleccionado = Modelos.parque_central;
+		//activar_datos_curiosos();
+	}
+
+	//función que activa el panel de datos curiosos mostrando un valor aleatorio
+	public void activar_datos_curiosos()
+	{
+		//se crea un instancia de clase random para generar un número aleatorio
+		var random = new System.Random();
+		//se genera un número aleatorio entre 0 y 7
 		var aleatorio = random.Next(0,7);
-	    activar_dato_curioso(aleatorio);
-    }
-	void activar_dato_curioso(int aleatorio)
-	{
+		//se toma uno de los datos curiosos del panel de contenido para datos curiosos
 		var dato_curioso = content_panel.transform.GetChild(aleatorio);
+		//se valida que el objeto no esté nulo
 		if(dato_curioso != null)
 		{
-			desactivar_hijos(content_panel.transform);
+			/*se desactivan todos los mensajes de datos curiosos por si quedó uno activo en una ejecución anterior*/
+			GlobalValues.desactivar_hijos(content_panel.transform);
+			//se activa el dato curioso
 			dato_curioso.gameObject.SetActive(true);
+			//se activa el panel de datos curiosos para poder visualizar el mensaje
 			panel_datos_curiosos.SetActive(true);
 		}	
 	}
-	void desactivar_hijos(Transform padre)
-	{
-		for (int i = 0; i < padre.childCount; i++) 
-		{
-			var hijo = padre.GetChild(i);
-			if (hijo != null)
-			{
-				hijo.gameObject.SetActive(false);
-			}
-		}
-	}
+	
+	//función que desactiva el panel de datos curiosos
 	public void cerrar_panel_datos_cuiosos()
 	{
 		panel_datos_curiosos.SetActive(false);
