@@ -3251,7 +3251,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &128214484
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9196,12 +9196,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1306338724}
-        m_TargetAssemblyTypeName: Personajes, Assembly-CSharp
+      - m_Target: {fileID: 1617174998}
+        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
         m_MethodName: mostrarPanel
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1053306888}
+          m_ObjectArgument: {fileID: 779547979}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -13075,7 +13075,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &493981494
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16972,6 +16972,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1617174998}
+        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+        m_MethodName: mostrarPanel
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1587222521}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -24094,6 +24106,7 @@ GameObject:
   - component: {fileID: 901004319}
   - component: {fileID: 901004321}
   - component: {fileID: 901004320}
+  - component: {fileID: 901004322}
   m_Layer: 5
   m_Name: PanelPersonajes
   m_TagString: Untagged
@@ -24169,6 +24182,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 901004318}
   m_CullTransparentMesh: 1
+--- !u!114 &901004322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901004318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a17c8a95bbed244cad5cf1f4c9e83cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  personajesMonumento: {fileID: 1843114917}
+  personajesAurora: {fileID: 505298306}
+  personajesTeatro: {fileID: 760147204}
+  btnAnteriorSiguiente: {fileID: 1798111523}
+  btnAnterior: {fileID: 76238299}
+  btnSiguiente: {fileID: 1253060387}
+  arregloPersonajesMonumento:
+  - {fileID: 193584620}
+  - {fileID: 739715729}
+  - {fileID: 553844786}
+  personaje: {fileID: 0}
+  manager: {fileID: 1617174998}
+  index: 0
 --- !u!1 &906576098
 GameObject:
   m_ObjectHideFlags: 0
@@ -32104,7 +32142,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1306338724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32117,9 +32155,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a17c8a95bbed244cad5cf1f4c9e83cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelPrincipalMecanica: {fileID: 1053306888}
-  panelHistoria: {fileID: 1587222521}
-  panelPersonajes: {fileID: 901004318}
   personajesMonumento: {fileID: 1843114917}
   personajesAurora: {fileID: 505298306}
   personajesTeatro: {fileID: 760147204}
@@ -32131,6 +32166,7 @@ MonoBehaviour:
   - {fileID: 739715729}
   - {fileID: 553844786}
   personaje: {fileID: 0}
+  manager: {fileID: 0}
   index: 0
 --- !u!4 &1306338725
 Transform:
@@ -39836,7 +39872,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1617174998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39849,21 +39885,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a32349b1bd8f8f24d8cbfef2bfd9e12d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelPrincipal: {fileID: 0}
-  panelPrincipalMecanica: {fileID: 0}
-  panelModeloSeleccionado: {fileID: 0}
-  panelInformacion: {fileID: 0}
-  panelHistoria: {fileID: 0}
-  panelPersonajes: {fileID: 0}
-  panelModeloEstadio: {fileID: 0}
-  panelModeloCentroLeon: {fileID: 0}
-  panelModeloMonumento: {fileID: 0}
-  panelModeloAurora: {fileID: 0}
-  panelModeloTeatro: {fileID: 0}
-  panelModeloCatedral: {fileID: 0}
-  panelModeloCampDavid: {fileID: 0}
-  panelModeloMatum: {fileID: 0}
-  panelModeloParqueCentral: {fileID: 0}
+  panelPrincipal: {fileID: 789212202}
+  panelPrincipalMecanica: {fileID: 1053306888}
+  panelModeloSeleccionado: {fileID: 779547979}
+  panelInformacion: {fileID: 1009510318}
+  panelHistoria: {fileID: 1587222521}
+  panelPersonajes: {fileID: 901004318}
+  panelModeloEstadio: {fileID: 1682453347}
+  panelModeloCentroLeon: {fileID: 7294153}
+  panelModeloMonumento: {fileID: 1541450004}
+  panelModeloAurora: {fileID: 804993855}
+  panelModeloTeatro: {fileID: 1315713879}
+  panelModeloCatedral: {fileID: 333163767}
+  panelModeloCampDavid: {fileID: 367459264}
+  panelModeloMatum: {fileID: 346537213}
+  panelModeloParqueCentral: {fileID: 1336762082}
 --- !u!4 &1617174999
 Transform:
   m_ObjectHideFlags: 0

@@ -7,27 +7,6 @@ using UnityEngine.EventSystems;
 public class Personajes : MonoBehaviour
 {
 	
-	//// Paneles
-	
-	//public GameObject panelPrincipal;
-	public GameObject panelPrincipalMecanica;
-	//public GameObject panelModeloSeleccionado;
-	//public GameObject panelInformacion;
-	public GameObject panelHistoria;
-	public GameObject panelPersonajes;
-	
-	//// SubPaneles
-	
-	//public GameObject panelModeloEstadio;
-	//public GameObject panelModeloCentroLeon;
-	//public GameObject panelModeloMonumento;
-	//public GameObject panelModeloAurora;
-	//public GameObject panelModeloTeatro;
-	//public GameObject panelModeloCatedral;
-	//public GameObject panelModeloCampDavid;
-	//public GameObject panelModeloMatum;
-	//public GameObject panelModeloParqueCentral;
-	
 	public GameObject personajesMonumento;
 	public GameObject personajesAurora;
 	public GameObject personajesTeatro;
@@ -42,33 +21,11 @@ public class Personajes : MonoBehaviour
 	// Panel con el grupo de personajes del arreglo
 	public GameObject personaje;
 	
+	// Manager instancia
+	public Manager manager;
+	
 	// Iniciador del arreglo de personajes
 	public int index = 0;
-	
-	//// Método para encender un panel dado
-	public void mostrarPanel(GameObject panelAMostrar){
-		
-		// Apagamos los paneles
-		panelHistoria.SetActive(false);
-		//panelInformacion.SetActive(false);
-		//panelModeloAurora.SetActive(false);
-		//panelModeloCampDavid.SetActive(false);
-		//panelModeloCatedral.SetActive(false);
-		//panelModeloCentroLeon.SetActive(false);
-		//panelModeloEstadio.SetActive(false);
-		//panelModeloMatum.SetActive(false);
-		//panelModeloMonumento.SetActive(false);
-		//panelModeloParqueCentral.SetActive(false);
-		//panelModeloSeleccionado.SetActive(false);
-		//panelModeloTeatro.SetActive(false);
-		panelPersonajes.SetActive(false);
-		//panelPrincipal.SetActive(false);
-		panelPrincipalMecanica.SetActive(false);
-		
-		/// encendemos el panel
-	
-		panelAMostrar.SetActive(true);
-	}
 	
 	
 		protected void Start()
@@ -80,14 +37,11 @@ public class Personajes : MonoBehaviour
 		// Se guarda el modelo o lugar seleccionado
 		var modelo_seleccionado = ValoresGlobales.modelo_seleccionado;
 		
-		// Encendiendo panel personajes ya que mi editor se crasheo y no me deja usar el manager.
-		panelPersonajes.SetActive(true);
-		
 		////Manager principal
-		//Manager manager = GameObject.FindObjectOfType<Manager>();
+		manager = GameObject.FindObjectOfType<Manager>();
 		
 		////Mostrando panel personajes
-		//manager.mostrarPanel(manager.panelPersonajes);
+		manager.mostrarPanel(manager.panelPersonajes);
 	
 		// Mostrar personaje(s) del lugar seleccionado al presionar boton desde el panel Historia:
 		mostrarPersonajesDelLugar();
