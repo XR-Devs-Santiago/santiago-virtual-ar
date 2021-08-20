@@ -93,52 +93,45 @@ public class Personajes : MonoBehaviour
 		mostrarPersonajesDelLugar();
 		
 	}
+	/// <summary>
+	/// Metodo para programar la mecanica del boton siguiente
+	/// </summary>
+	
+	public void next(){
+		// desactivamos el personaje previo
+		personaje = arregloPersonajesMonumento[index];
+		personaje.SetActive(false);
+		index++;
+		// Verifica si no se pasa del # de elementos del arreglo...
+		if(index > arregloPersonajesMonumento.Length - 1){
+			index = 0;
+			Debug.Log("vuelve a 0");
+		}
+		//Enciende el personaje	
+		personaje = arregloPersonajesMonumento[index];
+		personaje.SetActive(true);
+
+	}
 	
 	/// <summary>
-	/// Metodo con la mecánica para manejar los botones de navegación (Siguiente, anterior) del panel de personajes.
+	/// Metodo para programar la mecanica del boton anterior
 	/// </summary>
-	public void mecanicaPersonajes (){
+	public void previous(){
+		// Viene del boton anterior
+		// desactivamos el personaje previo
+		personaje = arregloPersonajesMonumento[index];
+		personaje.SetActive(false);
+		index--;
+		// Verifica si no se pasa del # de elementos del arreglo...
+		if(index < 0){
+			index = arregloPersonajesMonumento.Length - 1;
+			Debug.Log("vuelve al ultimo elemento del arreglo: 2");
+		} 
+		//Enciende el personaje	
+		personaje = arregloPersonajesMonumento[index];
+		personaje.SetActive(true);	
 
-		// Validamos que el arreglo no se encuentre vacío en la posición index
-		if(arregloPersonajesMonumento[index] != null){
-			// Guardamos el boton seleccionado
-				var botonPresionado = EventSystem.current.currentSelectedGameObject.name;
-			// Verificamos si presiona el boton anterior o siguiente
-			
-				
-				if(btnSiguiente.name.Equals(botonPresionado)){ // si viene del btn siguiente
-					// desactivamos el personaje previo
-					personaje = arregloPersonajesMonumento[index];
-					personaje.SetActive(false);
-					index++;
-					// Verifica si no se pasa del # de elementos del arreglo...
-					if(index > arregloPersonajesMonumento.Length - 1){
-						index = 0;
-						Debug.Log("vuelve a 0");
-					}
-					//Enciende el personaje	
-					personaje = arregloPersonajesMonumento[index];
-					personaje.SetActive(true);
-
-				
-				} if (btnAnterior.name.Equals(botonPresionado)){
-					// Viene del boton anterior
-					
-					// desactivamos el personaje previo
-					personaje = arregloPersonajesMonumento[index];
-					personaje.SetActive(false);
-					index--;
-					// Verifica si no se pasa del # de elementos del arreglo...
-					if(index < 0){
-						index = arregloPersonajesMonumento.Length - 1;
-						Debug.Log("vuelve al ultimo elemento del arreglo: 2");
-					} 
-					//Enciende el personaje	
-					personaje = arregloPersonajesMonumento[index];
-					personaje.SetActive(true);	
-				}
-			} 	
-}
+	}
   
 	/// <summary>
 	/// Metodo para saber de que lugar corresponde el personaje de acuerdo con el lugar seleccionado
@@ -159,7 +152,6 @@ public class Personajes : MonoBehaviour
 		case Modelos.monumento:
 			personajesMonumento.SetActive(true);
 			// Sse abre la mecanica para los botones next/previous
-			mecanicaPersonajes();
 			break;
 			 	
 		case Modelos.centro_leon:
