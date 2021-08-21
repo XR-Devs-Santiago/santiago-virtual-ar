@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5987,13 +5987,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 544901904}
-        m_TargetAssemblyTypeName: HistoriasManager, Assembly-CSharp
-        m_MethodName: volver_a_modelo_seleccionado
-        m_Mode: 1
+      - m_Target: {fileID: 237419136}
+        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+        m_MethodName: mostrarPanel
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 323444781}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -6556,7 +6556,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 237419135}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 787e58a458e9c924eab374960a3c12fa, type: 3}
+  m_Script: {fileID: 11500000, guid: ea7038fd5c31d72448feafb1a0077de9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   panelPrincipal: {fileID: 783269131}
@@ -12953,66 +12953,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 532254315}
   m_CullTransparentMesh: 1
---- !u!1 &544901903
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 544901905}
-  - component: {fileID: 544901904}
-  m_Layer: 0
-  m_Name: HistoriasManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &544901904
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 544901903}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 026f3d1a92921254d9dfc14875220253, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  monumento_info: {fileID: 991857342}
-  estadio_info: {fileID: 1857545898}
-  aurora_info: {fileID: 1202381540}
-  teatro_info: {fileID: 699888311}
-  catedral_info: {fileID: 1353488616}
-  matum_info: {fileID: 1961624464}
-  parque_central_info: {fileID: 1615844595}
-  camp_david_info: {fileID: 1423301647}
-  centro_leon_info: {fileID: 893404864}
-  centro_de_la_cultura_info: {fileID: 406470111}
-  fortaleza_san_luis_info: {fileID: 1056471826}
-  panel_historias: {fileID: 783280174}
-  panel_historia_content: {fileID: 649687434}
-  boton_personajes: {fileID: 591450472}
-  conoce_sus_personajes: {fileID: 806606011}
-  aurora_content_personajes: {fileID: 1279867491}
-  monumento_content_personajes: {fileID: 370455343}
---- !u!4 &544901905
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 544901903}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &556932297
 GameObject:
   m_ObjectHideFlags: 0
@@ -14137,13 +14077,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 544901904}
-        m_TargetAssemblyTypeName: HistoriasManager, Assembly-CSharp
-        m_MethodName: mostrar_personajes
-        m_Mode: 1
+      - m_Target: {fileID: 237419136}
+        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+        m_MethodName: mostrarPanel
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 67306509}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -18809,6 +18749,7 @@ GameObject:
   - component: {fileID: 783280175}
   - component: {fileID: 783280177}
   - component: {fileID: 783280176}
+  - component: {fileID: 783280178}
   m_Layer: 5
   m_Name: PanelHistoria
   m_TagString: Untagged
@@ -18881,6 +18822,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 783280174}
   m_CullTransparentMesh: 1
+--- !u!114 &783280178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783280174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51d08874b1139034b86410db55ec5d91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monumento_info: {fileID: 991857342}
+  estadio_info: {fileID: 1857545898}
+  aurora_info: {fileID: 1202381540}
+  teatro_info: {fileID: 699888311}
+  catedral_info: {fileID: 1353488616}
+  matum_info: {fileID: 1961624464}
+  parque_central_info: {fileID: 1615844595}
+  camp_david_info: {fileID: 1423301647}
+  centro_leon_info: {fileID: 893404864}
+  centro_de_la_cultura_info: {fileID: 406470111}
+  fortaleza_san_luis_info: {fileID: 1056471826}
+  panel_historias: {fileID: 783280174}
+  panel_historia_content: {fileID: 649687434}
+  boton_personajes: {fileID: 591450472}
+  conoce_sus_personajes: {fileID: 806606011}
 --- !u!1 &791724238
 GameObject:
   m_ObjectHideFlags: 0
@@ -21132,7 +21100,7 @@ RectTransform:
   - {fileID: 783280175}
   - {fileID: 67306510}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -32576,13 +32544,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 544901904}
-        m_TargetAssemblyTypeName: HistoriasManager, Assembly-CSharp
-        m_MethodName: activar_panel_historia
-        m_Mode: 1
+      - m_Target: {fileID: 237419136}
+        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+        m_MethodName: mostrarPanel
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 783280174}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -34580,51 +34548,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1372538213}
   m_CullTransparentMesh: 1
---- !u!1 &1375390971
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1375390972}
-  - component: {fileID: 1375390973}
-  m_Layer: 0
-  m_Name: DatosCuriososManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1375390972
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1375390971}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1375390973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1375390971}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0397c0a808f6bc34292f78ea47d03f5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  content_panel: {fileID: 816842471}
-  panel_datos_curiosos: {fileID: 2713867284793846422}
 --- !u!1 &1380323074
 GameObject:
   m_ObjectHideFlags: 0
@@ -54817,6 +54740,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2713867284793846441}
+  - component: {fileID: 2713867284793846423}
   m_Layer: 5
   m_Name: PanelDatosCuriosos
   m_TagString: Untagged
@@ -54824,6 +54748,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!114 &2713867284793846423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2713867284793846422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0397c0a808f6bc34292f78ea47d03f5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  content_panel: {fileID: 816842471}
+  panel_datos_curiosos: {fileID: 2713867284793846422}
 --- !u!1 &2713867284793846424
 GameObject:
   m_ObjectHideFlags: 0
@@ -55075,7 +55013,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1375390973}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Manager, Assembly-CSharp
         m_MethodName: cerrar_panel_datos_cuiosos
         m_Mode: 1

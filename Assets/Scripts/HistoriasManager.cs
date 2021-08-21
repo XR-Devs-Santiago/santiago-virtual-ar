@@ -12,16 +12,16 @@ public class HistoriasManager : MonoBehaviour
 	public GameObject panel_historias, panel_historia_content;
 	//variables para el botón de personajes y el texto conoce sus personajes
 	public GameObject boton_personajes, conoce_sus_personajes;
-	//Variables para el contenido de panel de personajes
-	public GameObject aurora_content_personajes, monumento_content_personajes;
+	
+	// Start is called on the frame when a script is enabled just before any of the Update methods is called the first time.
+	protected void Start()
+	{
+		activar_panel_historia();
+	}
 	public void activar_panel_historia()
 	{
 		//validamos el botón personajes
 		validar_boton_personajes();
-		//activamos el panel historia
-		//panel_historias.SetActive(true);
-		var manager = GameObject.FindObjectOfType<Manager>();
-		manager.mostrarPanel(panel_historias);
 		//activamos la historia de acuerdo al modelo seleccionado
 		activar_historia();
 	}
@@ -33,59 +33,51 @@ public class HistoriasManager : MonoBehaviour
 		GlobalFunctions.desactivar_hijos(panel_historia_content.transform);
 		//buscamos el modelo seleccionado
 		var modelo_seleccionado = ValoresGlobales.modelo_seleccionado;
-		//activamos la historia de acuerdo al modelo seleccionado
-		if(modelo_seleccionado == Modelos.monumento)
+		switch(modelo_seleccionado)
 		{
-			monumento_info.SetActive(true);
+			case Modelos.monumento:
+				monumento_info.SetActive(true);
+				break;
+			case Modelos.aurora:
+				aurora_info.SetActive(true);
+				break;
+			case Modelos.estadio_cibao:
+				estadio_info.SetActive(true);
+				break;
+			case Modelos.teatro:
+				teatro_info.SetActive(true);
+				break;
+			case Modelos.catedral:
+				catedral_info.SetActive(true);
+				break;
+			case Modelos.matum:
+				matum_info.SetActive(true);
+				break;
+			case Modelos.parque_central:
+				parque_central_info.SetActive(true);
+				break;
+			case Modelos.camp_david:
+				camp_david_info.SetActive(true);
+				break;
+			case Modelos.centro_leon:
+				centro_leon_info.SetActive(true);
+				break;
+			case Modelos.centro_de_la_cultura:
+				centro_de_la_cultura_info.SetActive(true);
+				break;
+			case Modelos.fortaleza:
+				fortaleza_san_luis_info.SetActive(true);
+				break;
 		}
-		else if(modelo_seleccionado == Modelos.aurora)
-		{
-			aurora_info.SetActive(true);
-		}
-		else if(modelo_seleccionado == Modelos.estadio_cibao)
-		{
-			estadio_info.SetActive(true);
-		}
-		else if(modelo_seleccionado == Modelos.teatro)
-		{
-			teatro_info.SetActive(true);
-		}
-		else if(modelo_seleccionado == Modelos.catedral)
-		{
-			catedral_info.SetActive(true);
-		}
-		else if(modelo_seleccionado == Modelos.matum)
-		{
-			matum_info.SetActive(true);
-		}
-		else if(modelo_seleccionado == Modelos.parque_central)
-		{
-			parque_central_info.SetActive(true);
-		}
-		else if(modelo_seleccionado == Modelos.camp_david)
-		{
-			camp_david_info.SetActive(true);
-		}
-		else if(modelo_seleccionado == Modelos.centro_leon)
-		{
-			centro_leon_info.SetActive(true);
-		}
-		else if(modelo_seleccionado == Modelos.centro_de_la_cultura)
-		{
-			centro_de_la_cultura_info.SetActive(true);
-		}
-		else if(modelo_seleccionado == Modelos.fortaleza)
-		{
-			fortaleza_san_luis_info.SetActive(true);
-		}	
 	}
 	//función para volver al panel anterior
-	public void volver_a_modelo_seleccionado()
-	{
-		var manager = GameObject.FindObjectOfType<Manager>();
-		manager.mostrarPanel(manager.panelModeloSeleccionado);
-		activar_modelo_seleccionado();
-	}
+	//public void volver_a_modelo_seleccionado()
+	//{
+	//	var manager = GameObject.FindObjectOfType<Manager>();
+	//	manager.mostrarPanel(manager.panelModeloSeleccionado);
+	//	activar_modelo_seleccionado();
+	//}
+	
 	//función que determinar si el botón personaajes debe mostrarse o no
 	void validar_boton_personajes()
 	{
@@ -99,70 +91,6 @@ public class HistoriasManager : MonoBehaviour
 		{
 			boton_personajes.SetActive(false);	
 			conoce_sus_personajes.SetActive(false);
-		}
-	}
-	void activar_modelo_seleccionado()
-	{
-		var manager = GameObject.FindObjectOfType<Manager>();
-		switch(ValoresGlobales.modelo_seleccionado)
-		{
-			case Modelos.aurora:
-				manager.panelModeloAurora.SetActive(true);
-				break;
-			case Modelos.camp_david:
-				manager.panelModeloCampDavid.SetActive(true);
-				break;
-			case Modelos.catedral:
-				manager.panelModeloCatedral.SetActive(true);
-				break;
-			case Modelos.centro_de_la_cultura:
-				manager.panelModeloCatedral.SetActive(true);
-				break;
-			case Modelos.centro_leon:
-				manager.panelModeloCentroLeon.SetActive(true);
-				break;
-			case Modelos.estadio_cibao:
-				manager.panelModeloEstadio.SetActive(true);
-				break;
-			case Modelos.matum:
-				manager.panelModeloMatum.SetActive(true);
-				break;
-			case Modelos.monumento:
-				manager.panelModeloMonumento.SetActive(true);
-				break;
-			case Modelos.parque_central:
-				manager.panelModeloParqueCentral.SetActive(true);
-				break;
-			case Modelos.teatro:
-				manager.panelModeloTeatro.SetActive(true);
-				break;
-			case Modelos.fortaleza:
-				manager.panelModeloFortaleza.SetActive(true);
-				break;
-		}
-	}
-	public void mostrar_personajes()
-	{
-		var manager = GameObject.FindObjectOfType<Manager>();
-		manager.mostrarPanel(manager.panelPersonajes);
-		activar_personajes();
-	}
-	void activar_personajes()
-	{
-		switch(ValoresGlobales.modelo_seleccionado)
-		{
-			case Modelos.centro_leon:
-				aurora_content_personajes.SetActive(true);
-				monumento_content_personajes.SetActive(false);
-				break;
-			case Modelos.aurora:
-				aurora_content_personajes.SetActive(true);
-				monumento_content_personajes.SetActive(false);
-				break;
-			case	Modelos.monumento:
-				monumento_content_personajes.SetActive(true);
-				aurora_content_personajes.SetActive(false);
-				break;
 		}
 	}
 	
