@@ -11,7 +11,6 @@ public class DatosCuriososManager : MonoBehaviour
 	//Nota: este método es sólo para fines de prueba en la versión final del proyecto no debe esta puesto que la lógica de datos curiosos debe arrancar al hacer clic en el botón de datos curiosos. 
 	protected void Start()
 	{
-		//ValoresGlobales.modelo_seleccionado = Modelos.monumento;
 		activar_datos_curiosos();
 	}
 	//función que activa el panel de datos curiosos mostrando un valor aleatorio

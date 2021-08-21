@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ValoresGlobales : MonoBehaviour
 {
-	public static Modelos modelo_seleccionado;
+	public static Modelos modelo_seleccionado = Modelos.catedral;
 }
 
 public enum Modelos
