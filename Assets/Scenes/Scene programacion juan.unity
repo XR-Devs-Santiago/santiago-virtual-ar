@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8064,7 +8064,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &323444782
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8143,7 +8143,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 323444781}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57b888874e5e51d4583b7ad4d7c1a2da, type: 3}
+  m_Script: {fileID: 11500000, guid: a7e637c22d9654e259e58b570b1031af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 1396156499}
@@ -19900,7 +19900,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1396156499}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Manager, Assembly-CSharp
         m_MethodName: mostrarPanel
         m_Mode: 2
@@ -31950,7 +31950,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1396156499}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Manager, Assembly-CSharp
         m_MethodName: mostrarPanel
         m_Mode: 2
@@ -32832,7 +32832,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1339223474
 RectTransform:
   m_ObjectHideFlags: 0
@@ -33323,21 +33323,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3988a11fad5b11d4184af463be9696ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monumento_info: {fileID: 0}
-  estadio_info: {fileID: 0}
-  aurora_info: {fileID: 0}
-  teatro_info: {fileID: 0}
-  catedral_info: {fileID: 0}
-  matum_info: {fileID: 0}
-  parque_central_info: {fileID: 0}
-  camp_david_info: {fileID: 0}
-  centro_leon_info: {fileID: 0}
-  centro_de_la_cultura_info: {fileID: 0}
-  fortaleza_san_luis_info: {fileID: 0}
-  panel_historias: {fileID: 0}
-  panel_historia_content: {fileID: 0}
-  boton_personajes: {fileID: 0}
-  conoce_sus_personajes: {fileID: 0}
 --- !u!1 &1376663343
 GameObject:
   m_ObjectHideFlags: 0
@@ -33995,8 +33980,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1396156500}
-  - component: {fileID: 1396156499}
   - component: {fileID: 1396156501}
+  - component: {fileID: 1396156499}
   m_Layer: 0
   m_Name: manager
   m_TagString: Untagged
@@ -34013,10 +33998,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1396156498}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 439c574ce373aed4c886a2536552c371, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e447bb6a2d54d93acf3e0ab5ac506a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelPrincipal: {fileID: 1868528563}
+  panelPrincipal: {fileID: 783269131}
   panelPrincipalMecanica: {fileID: 1738395764}
   panelModeloSeleccionado: {fileID: 323444781}
   panelInformacion: {fileID: 1961517269}
@@ -36873,21 +36858,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3988a11fad5b11d4184af463be9696ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monumento_info: {fileID: 941164427}
-  estadio_info: {fileID: 1803448912}
-  aurora_info: {fileID: 2013389436}
-  teatro_info: {fileID: 759076178}
-  catedral_info: {fileID: 1704262380}
-  matum_info: {fileID: 19279692}
-  parque_central_info: {fileID: 1205691646}
-  camp_david_info: {fileID: 2002198726}
-  centro_leon_info: {fileID: 517655109}
-  centro_de_la_cultura_info: {fileID: 0}
-  fortaleza_san_luis_info: {fileID: 2045584546}
-  panel_historias: {fileID: 1490127830}
-  panel_historia_content: {fileID: 672167344}
-  boton_personajes: {fileID: 1366355374}
-  conoce_sus_personajes: {fileID: 939978595}
 --- !u!1 &1493507725
 GameObject:
   m_ObjectHideFlags: 0
@@ -49489,7 +49459,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1963946848
 RectTransform:
   m_ObjectHideFlags: 0

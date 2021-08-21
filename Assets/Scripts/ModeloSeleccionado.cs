@@ -17,8 +17,6 @@ public class ModeloSeleccionado : MonoBehaviour
 	public GameObject btnAtras;
 	
 	
-	
-	
 	public void modeloSelecionado(){
 
 		//Obtenemos el lugar seleccionado
