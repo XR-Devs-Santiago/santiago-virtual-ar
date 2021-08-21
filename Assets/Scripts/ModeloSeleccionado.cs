@@ -17,13 +17,12 @@ public class ModeloSeleccionado : MonoBehaviour
 	public GameObject btnAtras;
 	
 	
-	
-	
 	public void modeloSelecionado(){
 
 		//Obtenemos el lugar seleccionado
 		var lugar = ValoresGlobales.modelo_seleccionado;
 		Debug.Log("Modelo seleccionado: "+ValoresGlobales.modelo_seleccionado);
+		Debug.Log(manager);
 
 		// Determinamos cual panel se activan de acuerdo a ese lugar
 		switch(lugar){
