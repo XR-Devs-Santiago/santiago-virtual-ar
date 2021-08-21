@@ -9,8 +9,8 @@ public class ValoresGlobales : MonoBehaviour
 
 public enum Modelos
 {
-		centro_leon,
 		estadio_cibao,
+		centro_leon,
 		monumento,
 		aurora,
 		teatro,
