@@ -13169,7 +13169,43 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 489447688}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1092732470}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 323444781}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 371776930}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &489447688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28890,6 +28926,7 @@ GameObject:
   - component: {fileID: 1092732471}
   - component: {fileID: 1092732473}
   - component: {fileID: 1092732472}
+  - component: {fileID: 1092732474}
   m_Layer: 5
   m_Name: PanelInformacion
   m_TagString: Untagged
@@ -28971,6 +29008,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1092732470}
   m_CullTransparentMesh: 1
+--- !u!114 &1092732474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092732470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6da1331227a9b354fa2b85065e180657, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elmanager: {fileID: 0}
+  MonumentoInfo: {fileID: 1613590195}
+  CatedralInfo: {fileID: 1702038374}
+  EstadioInfo: {fileID: 574250323}
+  AuroraInfo: {fileID: 191000784}
+  TeatroInfo: {fileID: 1907700587}
+  FortalezaInfo: {fileID: 1350373933}
+  HotelMInfo: {fileID: 1140289225}
+  CampDavidInfo: {fileID: 1921300938}
+  ParqueCentralInfo: {fileID: 463975770}
+  CentroLeonInfo: {fileID: 212072648}
 --- !u!1 &1093229784
 GameObject:
   m_ObjectHideFlags: 0
