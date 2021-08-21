@@ -46,10 +46,10 @@ public class ControladorDeModelos : MonoBehaviour
 	}
 
 	public void seleccionarModelo() {	
-		GameObject backButton = GameObject.Find("btn - Atras de panel principal");
-		GameObject i = GameObject.Find("Instanciador");
-		Instanciador instanciador = (Instanciador) i.GetComponent(typeof(Instanciador));
-		backButton.SetActive(false);
+		//GameObject backButton = GameObject.Find("btn - Atras de panel principal");
+		//GameObject i = GameObject.Find("Instanciador");
+		//Instanciador instanciador = (Instanciador) i.GetComponent(typeof(Instanciador));
+		//backButton.SetActive(false);
 		GameObject canvas = GameObject.Find("Canvas");
 		var child = canvas.transform.GetChild(4).gameObject;
 
