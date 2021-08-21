@@ -160,11 +160,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: Poppins-Regular SDF
+  m_Name: Poppins-Regular_SDF
   m_EditorClassIdentifier: 
-  hashCode: 1038840109
+  hashCode: 1039120370
   material: {fileID: -7959177659334702001}
-  materialHashCode: -1081833491
+  materialHashCode: -646721774
   m_Version: 1.1.0
   m_SourceFontFileGUID: b6a8244af40e3be498b9b6ba98f2a1d7
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: b6a8244af40e3be498b9b6ba98f2a1d7,
