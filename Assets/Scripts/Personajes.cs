@@ -28,15 +28,8 @@ public class Personajes : MonoBehaviour
 	public int index = 0;
 	
 	
-		protected void Start()
+	protected void Start()
 	{
-		
-		// Para probar se seleccionó manualmente el modelo del monumento
-		ValoresGlobales.modelo_seleccionado = Modelos.monumento;
-		
-		// Se guarda el modelo o lugar seleccionado
-		var modelo_seleccionado = ValoresGlobales.modelo_seleccionado;
-		
 		////Manager principal
 		manager = GameObject.FindObjectOfType<Manager>();
 		
