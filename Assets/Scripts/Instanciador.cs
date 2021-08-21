@@ -37,6 +37,13 @@ public class Instanciador : MonoBehaviour
     }
     
 	public void destroySantiago3D () {
-		Destroy(obj1, 0f);
+		obj1.SetActive(false);
+		//Destroy(obj1, 0f);
+	}
+	
+	public void activarSantiago3D () {
+		obj1.SetActive(true);
+		//Destroy(obj1, 0f);
 	}
 }
+

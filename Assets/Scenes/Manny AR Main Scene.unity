@@ -968,7 +968,7 @@ MonoBehaviour:
   panelPrincipalMecanica: {fileID: 1738395764}
   panelModeloSeleccionado: {fileID: 323444781}
   panelInformacion: {fileID: 1092732470}
-  panelHistoria: {fileID: 0}
+  panelHistoria: {fileID: 952971428}
   panelPersonajes: {fileID: 2027865747}
   panelModeloEstadio: {fileID: 1963946847}
   panelModeloCentroLeon: {fileID: 1963314993}
@@ -1004,7 +1004,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &45528827
 GameObject:
@@ -1662,7 +1662,7 @@ RectTransform:
   - {fileID: 1970427131}
   - {fileID: 691161685}
   m_Father: {fileID: 855880066}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2030,7 +2030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3290,7 +3290,7 @@ MonoBehaviour:
         m_MethodName: mostrarPanel
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 323444781}
+          m_ObjectArgument: {fileID: 952971428}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -6315,7 +6315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7202,13 +7202,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 40871659}
-        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
-        m_MethodName: mostrarPanel
-        m_Mode: 2
+      - m_Target: {fileID: 323444785}
+        m_TargetAssemblyTypeName: ModeloSeleccionado, Assembly-CSharp
+        m_MethodName: modeloSelecionado
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 323444781}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -9495,7 +9495,6 @@ RectTransform:
   - {fileID: 915523621}
   - {fileID: 837854231}
   - {fileID: 450572093}
-  - {fileID: 1092732471}
   m_Father: {fileID: 855880066}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14394,22 +14393,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 323444781}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 371776930}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 323444785}
+        m_TargetAssemblyTypeName: ModeloSeleccionado, Assembly-CSharp
+        m_MethodName: modeloSelecionado
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -15497,7 +15484,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &532254315
 GameObject:
@@ -17137,7 +17124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -20321,7 +20308,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &757645685
 GameObject:
@@ -21002,7 +20989,7 @@ Transform:
   m_Children:
   - {fileID: 379629261}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &772536541
 GameObject:
@@ -21831,7 +21818,7 @@ MonoBehaviour:
         m_MethodName: mostrarPanel
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 952971428}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -23023,7 +23010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -23433,11 +23420,12 @@ RectTransform:
   - {fileID: 783269132}
   - {fileID: 1738395765}
   - {fileID: 323444782}
+  - {fileID: 1092732471}
   - {fileID: 952971429}
   - {fileID: 2027865748}
   - {fileID: 83077215}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -24702,7 +24690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -25382,7 +25370,7 @@ RectTransform:
   - {fileID: 2042453381}
   - {fileID: 1567680887}
   m_Father: {fileID: 855880066}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -25406,9 +25394,11 @@ MonoBehaviour:
   aurora_info: {fileID: 758184220}
   teatro_info: {fileID: 1987743449}
   catedral_info: {fileID: 1472200581}
+  matum_info: {fileID: 796514036}
   parque_central_info: {fileID: 1735079}
   camp_david_info: {fileID: 1795250513}
   centro_leon_info: {fileID: 334835248}
+  centro_de_la_cultura_info: {fileID: 609596604}
   fortaleza_san_luis_info: {fileID: 108472183}
   panel_historias: {fileID: 952971428}
   panel_historia_content: {fileID: 1567680886}
@@ -28831,8 +28821,8 @@ RectTransform:
   - {fileID: 1350373934}
   - {fileID: 1921300939}
   - {fileID: 463975771}
-  m_Father: {fileID: 323444782}
-  m_RootOrder: 12
+  m_Father: {fileID: 855880066}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -28889,14 +28879,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da1331227a9b354fa2b85065e180657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elmanager: {fileID: 0}
   MonumentoInfo: {fileID: 1613590195}
   CatedralInfo: {fileID: 1702038374}
   EstadioInfo: {fileID: 574250323}
   AuroraInfo: {fileID: 191000784}
   TeatroInfo: {fileID: 1907700587}
   FortalezaInfo: {fileID: 1350373933}
-  HotelMInfo: {fileID: 0}
+  HotelMInfo: {fileID: 1350373933}
   CampDavidInfo: {fileID: 1921300938}
   ParqueCentralInfo: {fileID: 463975770}
   CentroLeonInfo: {fileID: 212072648}
@@ -34878,7 +34867,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -37776,7 +37765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -43160,7 +43149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -49418,7 +49407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -49496,7 +49485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -51425,7 +51414,7 @@ RectTransform:
   - {fileID: 702739478}
   - {fileID: 1016778181}
   m_Father: {fileID: 855880066}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -53277,6 +53266,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 755974507}
+        m_TargetAssemblyTypeName: Instanciador, Assembly-CSharp
+        m_MethodName: activarSantiago3D
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

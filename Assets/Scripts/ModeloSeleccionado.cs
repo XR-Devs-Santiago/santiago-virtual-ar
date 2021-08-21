@@ -75,7 +75,6 @@ public class ModeloSeleccionado : MonoBehaviour
 			panelBotones.SetActive(true);
 			break;
 		case Modelos.estadio_cibao:
-			
 			manager.mostrarPanel(manager.panelModeloEstadio);
 			panelModeloSeleccionado.SetActive(true);
 			panelBotones.SetActive(true);

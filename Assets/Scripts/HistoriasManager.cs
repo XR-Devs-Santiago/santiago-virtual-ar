@@ -5,8 +5,8 @@ using UnityEngine;
 public class HistoriasManager : MonoBehaviour
 {
 	//variables que almacenan las historias a mostrar
-	public GameObject monumento_info, estadio_info, aurora_info, teatro_info, catedral_info, 
-		parque_central_info, camp_david_info, centro_leon_info, 
+	public GameObject monumento_info, estadio_info, aurora_info, teatro_info, catedral_info, matum_info, 
+		parque_central_info, camp_david_info, centro_leon_info, centro_de_la_cultura_info, 
 		fortaleza_san_luis_info;
 	//variable que almancena el panel de historias y su panel de contenido
 	public GameObject panel_historias, panel_historia_content;
@@ -18,6 +18,7 @@ public class HistoriasManager : MonoBehaviour
 	{
 		activar_panel_historia();
 	}
+	
 	public void activar_panel_historia()
 	{
 		//validamos el botón personajes
@@ -50,6 +51,9 @@ public class HistoriasManager : MonoBehaviour
 			case Modelos.catedral:
 				catedral_info.SetActive(true);
 				break;
+			case Modelos.matum:
+				matum_info.SetActive(true);
+				break;
 			case Modelos.parque_central:
 				parque_central_info.SetActive(true);
 				break;
@@ -58,6 +62,9 @@ public class HistoriasManager : MonoBehaviour
 				break;
 			case Modelos.centro_leon:
 				centro_leon_info.SetActive(true);
+				break;
+			case Modelos.centro_de_la_cultura:
+				centro_de_la_cultura_info.SetActive(true);
 				break;
 			case Modelos.fortaleza:
 				fortaleza_san_luis_info.SetActive(true);
