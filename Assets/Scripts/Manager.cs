@@ -22,6 +22,7 @@ public class Manager : MonoBehaviour
 	public GameObject panelModeloCampDavid;
 	public GameObject panelModeloMatum;
 	public GameObject panelModeloParqueCentral;
+	public GameObject panelModeloFortaleza;
 	
 	// Método para encender un panel dado
 	public void mostrarPanel(GameObject panelAMostrar){
