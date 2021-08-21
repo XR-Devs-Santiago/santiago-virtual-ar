@@ -18,6 +18,7 @@ public class HistoriasManager : MonoBehaviour
 	{
 		activar_panel_historia();
 	}
+	
 	public void activar_panel_historia()
 	{
 		//validamos el botón personajes

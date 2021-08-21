@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PanelInfo : MonoBehaviour
-{
-	public Manager elmanager;
-	
+{	
 	public GameObject MonumentoInfo;
 	public GameObject CatedralInfo;
 	public GameObject EstadioInfo;
@@ -21,8 +19,7 @@ public class PanelInfo : MonoBehaviour
 	// Start is called on the frame when a script is enabled just before any of the Update methods is called the first time.
 	protected void Start()
 	{
-	
-		elmanager = FindObjectOfType<Manager>();
+		modeloSeleccionado();
 	}
 	
 	public void showPanel(GameObject panelToShow){
@@ -41,7 +38,7 @@ public class PanelInfo : MonoBehaviour
 	
 	}
 	
-	public void modeloseleccionado()
+	public void modeloSeleccionado()
 	{
 		//modeloseleccionadocodigo = seleccion;
 		var lugar = ValoresGlobales.modelo_seleccionado;
@@ -54,7 +51,7 @@ public class PanelInfo : MonoBehaviour
 		{showPanel(CatedralInfo);}
 		
 		if (lugar == Modelos.estadio_cibao)
-		{showPanel(CatedralInfo);}
+		{showPanel(EstadioInfo);}
 		
 		if (lugar == Modelos.aurora)
 		{showPanel(AuroraInfo);}
@@ -63,13 +60,13 @@ public class PanelInfo : MonoBehaviour
 		{showPanel(TeatroInfo);}
 		
 		if (lugar == Modelos.fortaleza)
-		{showPanel(CatedralInfo);}
+		{showPanel(FortalezaInfo);}
 		
 		if (lugar == Modelos.matum)
-		{showPanel(CatedralInfo);}
+		{showPanel(HotelMInfo);}
 		
 		if (lugar == Modelos.camp_david)
-		{showPanel(CatedralInfo);}
+		{showPanel(CampDavidInfo);}
 		
 		if (lugar == Modelos.parque_central)
 		{showPanel(ParqueCentralInfo);}
