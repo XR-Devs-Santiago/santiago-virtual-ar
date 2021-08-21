@@ -6,14 +6,6 @@ public class DatosCuriososManager : MonoBehaviour
 {
 	//variables del panel de contenido de datos curiosos y panel de datos curiosos
 	public GameObject content_panel, panel_datos_curiosos;
-	
-	// Start is called on the frame when a script is enabled just before any of the Update methods is called the first time.
-	//Nota: este método es sólo para fines de prueba en la versión final del proyecto no debe esta puesto que la lógica de datos curiosos debe arrancar al hacer clic en el botón de datos curiosos. 
-	protected void Start()
-	{
-		ValoresGlobales.modelo_seleccionado = Modelos.monumento;
-		//activar_datos_curiosos();
-	}
 	//función que activa el panel de datos curiosos mostrando un valor aleatorio
 	public void activar_datos_curiosos()
 	{

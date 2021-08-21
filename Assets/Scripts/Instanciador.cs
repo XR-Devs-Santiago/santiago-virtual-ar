@@ -5,23 +5,16 @@ using UnityEngine;
 public class Instanciador : MonoBehaviour
 {
     // Objecto a instanciar
-	public GameObject centroLeon;
-	//public GameObject monumento;
-	//public GameObject catedral;
-	//public GameObject hotelMatum;
-	//public GameObject auroraCigar;
-	//public GameObject estadioCibao;
-	//public GameObject centroDeLaCultura;
-	//public GameObject fortalezaSanLuis;
-	//public GameObject campDavid;
-	//public GameObject parqueCentral;
+	public GameObject santiago3D;
+	// Panel principal
+	public GameObject panelPrincipal;
+	// 05- Modelo Seleccionado
+	public GameObject panelModeloSeleccionado;
 
 	// El indicador, donde lo instanciamos
-    Indicador ElIndicador;
+	Indicador ElIndicador;
+	// Objecto instanceado
 	GameObject obj1;
-	// GameObject obj2;
-
-    int spawned = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -31,17 +24,21 @@ public class Instanciador : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        // toco la pantalla para instanciar un objecto
-        if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
+	{
+		
+		// Toco la pantalla para instanciar un objecto, ATENCION si panelModeloSeleccionado esta activo no permitir instanciar el modelo santiago3D
+		if (obj1 == null && Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began && (!panelModeloSeleccionado.gameObject.active || panelModeloSeleccionado == null))
         {
         	// Solo instanceamos una vez
-        	if (obj1 == null) {
-	        	Destroy(obj1, 0f);
-	        	// Instancear al modelo del centro leon
-	        	obj1 = Instantiate(centroLeon, ElIndicador.transform.position, ElIndicador.transform.rotation);
-        	}
-	       
+        	Destroy(obj1, 0f);
+        	// Instancear al modelo del centro leon
+		    obj1 = Instantiate(santiago3D, ElIndicador.transform.position, ElIndicador.transform.rotation);
+		    ElIndicador.gameObject.SetActive(false);
+		    panelPrincipal.gameObject.SetActive(true);
         }
     }
+    
+	public void destroySantiago3D () {
+		Destroy(obj1, 0f);
+	}
 }
