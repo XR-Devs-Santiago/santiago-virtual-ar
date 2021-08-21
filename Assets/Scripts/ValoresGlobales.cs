@@ -11,8 +11,8 @@ public enum Modelos
 {
 		estadio_cibao,
 		centro_leon,
-		monumento,
 		aurora,
+		monumento,
 		teatro,
 		catedral,
 		fortaleza,

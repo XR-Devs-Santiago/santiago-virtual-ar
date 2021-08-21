@@ -29,8 +29,6 @@ public class Instanciador : MonoBehaviour
 		// Toco la pantalla para instanciar un objecto, ATENCION si panelModeloSeleccionado esta activo no permitir instanciar el modelo santiago3D
 		if (obj1 == null && Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began && (!panelModeloSeleccionado.gameObject.active || panelModeloSeleccionado == null))
         {
-        	// Solo instanceamos una vez
-        	Destroy(obj1, 0f);
         	// Instancear al modelo del centro leon
 		    obj1 = Instantiate(santiago3D, ElIndicador.transform.position, ElIndicador.transform.rotation);
 		    ElIndicador.gameObject.SetActive(false);

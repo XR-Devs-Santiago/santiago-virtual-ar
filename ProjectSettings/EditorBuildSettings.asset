@@ -26,9 +26,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/AR Main Scene.unity
     guid: 50389c3556e694d839c80f6b0de600a1
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Manny AR Main Scene.unity
-    guid: 2d9c94f06b2ca4389adfb35e3e9ff70d
+    guid: 9c06e77fbc91749fdb51c5aef0df4b9d
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 25c4779b8185a4ad196e71ca7bc0999d,
       type: 2}
