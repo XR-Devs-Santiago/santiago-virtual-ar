@@ -38,14 +38,14 @@ public class Manager : MonoBehaviour
 		panelModeloMatum.SetActive(false);
 		panelModeloMonumento.SetActive(false);
 		panelModeloParqueCentral.SetActive(false);
+		panelModeloFortaleza.SetActive(false);
 		panelModeloSeleccionado.SetActive(false);
 		panelModeloTeatro.SetActive(false);
 		panelPersonajes.SetActive(false);
 		panelPrincipal.SetActive(false);
 		panelPrincipalMecanica.SetActive(false);
 		
-		/// encendemos el panel
-	
+		/// Encendemos el panel
 		panelAMostrar.SetActive(true);
 	}
 	

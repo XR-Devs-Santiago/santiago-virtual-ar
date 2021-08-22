@@ -16,10 +16,9 @@ public class ModeloSeleccionado : MonoBehaviour
 	public GameObject btnUbicacion;
 	public GameObject btnAtras;
 	
-	
 	public void modeloSelecionado(){
 
-		//Obtenemos el lugar seleccionado
+		// Obtenemos el lugar seleccionado
 		var lugar = ValoresGlobales.modelo_seleccionado;
 		Debug.Log("Modelo seleccionado: "+ValoresGlobales.modelo_seleccionado);
 
@@ -84,13 +83,5 @@ public class ModeloSeleccionado : MonoBehaviour
 			Debug.Log("Ubicacion sin pantalla");
 			break;
 		}
-	}
-	
-    // Start is called before the first frame update
-    void Start()
-    {
-	    modeloSelecionado();
-	   
-    }
-
+	}	
 }
