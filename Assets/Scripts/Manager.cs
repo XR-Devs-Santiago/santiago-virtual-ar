@@ -24,6 +24,14 @@ public class Manager : MonoBehaviour
 	public GameObject panelModeloParqueCentral;
 	public GameObject panelModeloFortaleza;
 	
+	// Start is called on the frame when a script is enabled just before any of the Update methods is called the first time.
+	protected void Start()
+	{
+		var c = new Vector2(Screen.width / 2, Screen.height / 2);
+		Debug.Log("c");
+		Debug.Log(c);
+	}
+	
 	// Método para encender un panel dado
 	public void mostrarPanel(GameObject panelAMostrar){
 		
@@ -38,14 +46,14 @@ public class Manager : MonoBehaviour
 		panelModeloMatum.SetActive(false);
 		panelModeloMonumento.SetActive(false);
 		panelModeloParqueCentral.SetActive(false);
+		panelModeloFortaleza.SetActive(false);
 		panelModeloSeleccionado.SetActive(false);
 		panelModeloTeatro.SetActive(false);
 		panelPersonajes.SetActive(false);
 		panelPrincipal.SetActive(false);
 		panelPrincipalMecanica.SetActive(false);
 		
-		/// encendemos el panel
-	
+		/// Encendemos el panel
 		panelAMostrar.SetActive(true);
 	}
 	
