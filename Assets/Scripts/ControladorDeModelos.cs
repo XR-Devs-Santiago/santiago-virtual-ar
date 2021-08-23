@@ -38,62 +38,62 @@ public class ControladorDeModelos : MonoBehaviour
 				ValoresGlobales.modelo_seleccionado = Modelos.estadio_cibao;
 				panelModeloSeleccionado.SetActive(true);
 				ModeloSeleccionadoManager.GetComponent<ModeloSeleccionado>().modeloSelecionado();
-				Handheld.Vibrate();
+				// Handheld.Vibrate();
 				break;
 			case "centro_leon":
 				Debug.Log("centro_leon case");
 				ValoresGlobales.modelo_seleccionado = Modelos.centro_leon;
 				panelModeloSeleccionado.SetActive(true);
 				ModeloSeleccionadoManager.GetComponent<ModeloSeleccionado>().modeloSelecionado();
-				Handheld.Vibrate();
+				// Handheld.Vibrate();
 				break;
 			case "monumento":
 				ValoresGlobales.modelo_seleccionado = Modelos.monumento;
 				panelModeloSeleccionado.SetActive(true);
 				ModeloSeleccionadoManager.GetComponent<ModeloSeleccionado>().modeloSelecionado();
-				Handheld.Vibrate();
+				// Handheld.Vibrate();
 				break;
 			case "aurora":
 				ValoresGlobales.modelo_seleccionado = Modelos.aurora;
 				panelModeloSeleccionado.SetActive(true);
 				ModeloSeleccionadoManager.GetComponent<ModeloSeleccionado>().modeloSelecionado();
-				Handheld.Vibrate();
+				// Handheld.Vibrate();
 				break;
 			case "teatro":
 				ValoresGlobales.modelo_seleccionado = Modelos.teatro;
 				panelModeloSeleccionado.SetActive(true);
 				ModeloSeleccionadoManager.GetComponent<ModeloSeleccionado>().modeloSelecionado();
-				Handheld.Vibrate();
+				// Handheld.Vibrate();
 				break;
 			case "catedral":
 				ValoresGlobales.modelo_seleccionado = Modelos.catedral;
 				panelModeloSeleccionado.SetActive(true);
 				ModeloSeleccionadoManager.GetComponent<ModeloSeleccionado>().modeloSelecionado();
-				Handheld.Vibrate();
+				// Handheld.Vibrate();
 				break;
 			case "fortaleza":
 				ValoresGlobales.modelo_seleccionado = Modelos.fortaleza;
 				panelModeloSeleccionado.SetActive(true);
 				ModeloSeleccionadoManager.GetComponent<ModeloSeleccionado>().modeloSelecionado();
-				//Handheld.Vibrate();
+				// Handheld.Vibrate();
 				break;
 			case "matum":
 				ValoresGlobales.modelo_seleccionado = Modelos.matum;
 				panelModeloSeleccionado.SetActive(true);
 				ModeloSeleccionadoManager.GetComponent<ModeloSeleccionado>().modeloSelecionado();
-				Handheld.Vibrate();
+				// Handheld.Vibrate();
 				break;
 			case "camp_david":
 				ValoresGlobales.modelo_seleccionado = Modelos.camp_david;
 				panelModeloSeleccionado.SetActive(true);
 				ModeloSeleccionadoManager.GetComponent<ModeloSeleccionado>().modeloSelecionado();
-				Handheld.Vibrate();
+				// Handheld.Vibrate();
 				break;
 			case "parque_central":
 				ValoresGlobales.modelo_seleccionado = Modelos.parque_central;
 				panelModeloSeleccionado.SetActive(true);
 				ModeloSeleccionadoManager.GetComponent<ModeloSeleccionado>().modeloSelecionado();
-				Handheld.Vibrate();
+				// Handheld.Vibrate();
 				break;
 			default:
 				Debug.Log("Modelo Seleccionado no encontrado");

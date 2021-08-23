@@ -1141,6 +1141,42 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 45528827}
   m_CullTransparentMesh: 1
+--- !u!1 &45886418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 45886419}
+  m_Layer: 5
+  m_Name: Modelo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &45886419
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45886418}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 73441183}
+  m_Father: {fileID: 1963314994}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -40.24768, y: 224.54004}
+  m_SizeDelta: {x: 612.6292, y: 879.535}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &46832670
 GameObject:
   m_ObjectHideFlags: 0
@@ -1545,6 +1581,106 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60889921}
   m_CullTransparentMesh: 1
+--- !u!1 &73441182
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 73441183}
+  - component: {fileID: 73441186}
+  - component: {fileID: 73441185}
+  - component: {fileID: 73441184}
+  m_Layer: 5
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &73441183
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73441182}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 13}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 45886419}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 16.256, y: 1047}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!65 &73441184
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73441182}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &73441185
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73441182}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &73441186
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73441182}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &82374184
 GameObject:
   m_ObjectHideFlags: 0
@@ -1988,6 +2124,7 @@ GameObject:
   - component: {fileID: 103758421}
   - component: {fileID: 103758423}
   - component: {fileID: 103758422}
+  - component: {fileID: 103758424}
   m_Layer: 5
   m_Name: MonumentoHeroesRestauracion
   m_TagString: Untagged
@@ -2055,6 +2192,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 103758420}
   m_CullTransparentMesh: 1
+--- !u!114 &103758424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103758420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9db2036a1e9144643b4c729cd661f497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelo: {fileID: 4130715698716203793, guid: e159f7f64b2984b629f4fbb4a862543e, type: 3}
 --- !u!1 &106907301
 GameObject:
   m_ObjectHideFlags: 0
@@ -4727,7 +4877,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 180988934}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1.784}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6384,6 +6534,7 @@ GameObject:
   - component: {fileID: 228073285}
   - component: {fileID: 228073287}
   - component: {fileID: 228073286}
+  - component: {fileID: 228073288}
   m_Layer: 5
   m_Name: LaCatedral
   m_TagString: Untagged
@@ -6451,6 +6602,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 228073284}
   m_CullTransparentMesh: 1
+--- !u!114 &228073288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228073284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9db2036a1e9144643b4c729cd661f497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelo: {fileID: 5623726775480103843, guid: 53ec227fa764b42f3b442fad8ab03a65, type: 3}
 --- !u!1 &233589893
 GameObject:
   m_ObjectHideFlags: 0
@@ -20399,22 +20563,6 @@ MonoBehaviour:
     type: 3}
   panelPrincipal: {fileID: 783269131}
   panelModeloSeleccionado: {fileID: 323444781}
-  monumento: {fileID: 4130715698716203793, guid: e159f7f64b2984b629f4fbb4a862543e,
-    type: 3}
-  estadio_cibao: {fileID: 9132944601387591381, guid: aab88433764214695b71c21c6b1e3d91,
-    type: 3}
-  centro_leon: {fileID: 923387447169156261, guid: 44864c3ca343c4407939ec33b27ca9ea,
-    type: 3}
-  aurora: {fileID: 2612236315074251678, guid: 4fc13c177b4ea485e988b8624e3b7b1b, type: 3}
-  teatro: {fileID: 4379676758658888893, guid: 4b0ee99828a054492a657fb584718e64, type: 3}
-  catedral: {fileID: 4379676758658888893, guid: 4b0ee99828a054492a657fb584718e64,
-    type: 3}
-  fortaleza: {fileID: 5623726775480103843, guid: 53ec227fa764b42f3b442fad8ab03a65,
-    type: 3}
-  camp_david: {fileID: 7813842743347533246, guid: c7812afa402564810b64c5c13c143cfe,
-    type: 3}
-  parque_central: {fileID: 6229178136025738951, guid: 847277e2d7e314105b3cd174121fd371,
-    type: 3}
 --- !u!4 &755974508
 Transform:
   m_ObjectHideFlags: 0
@@ -23087,6 +23235,7 @@ GameObject:
   - component: {fileID: 837854231}
   - component: {fileID: 837854233}
   - component: {fileID: 837854232}
+  - component: {fileID: 837854234}
   m_Layer: 5
   m_Name: ParqueCentral
   m_TagString: Untagged
@@ -23154,6 +23303,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 837854230}
   m_CullTransparentMesh: 1
+--- !u!114 &837854234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837854230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9db2036a1e9144643b4c729cd661f497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelo: {fileID: 6229178136025738951, guid: 847277e2d7e314105b3cd174121fd371, type: 3}
 --- !u!1 &838429615
 GameObject:
   m_ObjectHideFlags: 0
@@ -24767,6 +24929,7 @@ GameObject:
   - component: {fileID: 915523621}
   - component: {fileID: 915523623}
   - component: {fileID: 915523622}
+  - component: {fileID: 915523624}
   m_Layer: 5
   m_Name: CampDavidRanch
   m_TagString: Untagged
@@ -24834,6 +24997,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 915523620}
   m_CullTransparentMesh: 1
+--- !u!114 &915523624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 915523620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9db2036a1e9144643b4c729cd661f497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelo: {fileID: 7813842743347533246, guid: c7812afa402564810b64c5c13c143cfe, type: 3}
 --- !u!1 &916133637
 GameObject:
   m_ObjectHideFlags: 0
@@ -34944,6 +35120,7 @@ GameObject:
   - component: {fileID: 1361364963}
   - component: {fileID: 1361364965}
   - component: {fileID: 1361364964}
+  - component: {fileID: 1361364966}
   m_Layer: 5
   m_Name: auroraCigarWorld
   m_TagString: Untagged
@@ -35011,6 +35188,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1361364962}
   m_CullTransparentMesh: 1
+--- !u!114 &1361364966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361364962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9db2036a1e9144643b4c729cd661f497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelo: {fileID: 2612236315074251678, guid: 4fc13c177b4ea485e988b8624e3b7b1b, type: 3}
 --- !u!1 &1361389167
 GameObject:
   m_ObjectHideFlags: 0
@@ -37842,6 +38032,7 @@ GameObject:
   - component: {fileID: 1468372527}
   - component: {fileID: 1468372529}
   - component: {fileID: 1468372528}
+  - component: {fileID: 1468372530}
   m_Layer: 5
   m_Name: FortalezaSanLuis
   m_TagString: Untagged
@@ -37909,6 +38100,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1468372526}
   m_CullTransparentMesh: 1
+--- !u!114 &1468372530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468372526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9db2036a1e9144643b4c729cd661f497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelo: {fileID: 7491459299846872612, guid: 24a8f50ec0d744263a622361bde3592b, type: 3}
 --- !u!1 &1472200581
 GameObject:
   m_ObjectHideFlags: 0
@@ -39462,7 +39666,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1527964561}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.339, z: -0.835}
+  m_LocalPosition: {x: 0, y: 0, z: -0.835}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -43359,6 +43563,7 @@ GameObject:
   - component: {fileID: 1692141347}
   - component: {fileID: 1692141349}
   - component: {fileID: 1692141348}
+  - component: {fileID: 1692141350}
   m_Layer: 5
   m_Name: teatroCibao
   m_TagString: Untagged
@@ -43426,6 +43631,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1692141346}
   m_CullTransparentMesh: 1
+--- !u!114 &1692141350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692141346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9db2036a1e9144643b4c729cd661f497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelo: {fileID: 4379676758658888893, guid: 4b0ee99828a054492a657fb584718e64, type: 3}
 --- !u!1 &1693861300
 GameObject:
   m_ObjectHideFlags: 0
@@ -49617,6 +49835,7 @@ GameObject:
   - component: {fileID: 1963314994}
   - component: {fileID: 1963314996}
   - component: {fileID: 1963314995}
+  - component: {fileID: 1963314997}
   m_Layer: 5
   m_Name: modeloCentroCulturalLeonJimenes
   m_TagString: Untagged
@@ -49638,6 +49857,7 @@ RectTransform:
   - {fileID: 1022791467}
   - {fileID: 701204768}
   - {fileID: 2088094003}
+  - {fileID: 45886419}
   m_Father: {fileID: 323444782}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -49684,6 +49904,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1963314993}
   m_CullTransparentMesh: 1
+--- !u!114 &1963314997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963314993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9db2036a1e9144643b4c729cd661f497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelo: {fileID: 923387447169156261, guid: 44864c3ca343c4407939ec33b27ca9ea, type: 3}
 --- !u!1 &1963946847
 GameObject:
   m_ObjectHideFlags: 0
@@ -49695,6 +49928,7 @@ GameObject:
   - component: {fileID: 1963946848}
   - component: {fileID: 1963946850}
   - component: {fileID: 1963946849}
+  - component: {fileID: 1963946851}
   m_Layer: 5
   m_Name: modeloEstadioCibao
   m_TagString: Untagged
@@ -49762,6 +49996,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1963946847}
   m_CullTransparentMesh: 1
+--- !u!114 &1963946851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963946847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9db2036a1e9144643b4c729cd661f497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelo: {fileID: 9132944601387591381, guid: aab88433764214695b71c21c6b1e3d91, type: 3}
 --- !u!1 &1965568654
 GameObject:
   m_ObjectHideFlags: 0
@@ -53613,29 +53860,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 770783570}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 755974507}
+        m_TargetAssemblyTypeName: Instanciador, Assembly-CSharp
+        m_MethodName: activarSantiago3D
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 755974506}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2120175531
 MonoBehaviour:
