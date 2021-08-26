@@ -1,40 +1,78 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR.ARFoundation;
-using UnityEngine.XR.ARSubsystems;
 
 public class InstanciadorDeModelo : MonoBehaviour
 {
-	// Emisor de rayos
-	ARRaycastManager losRayos;
-	// Objecto a instanciar
-	public GameObject modelo;
+	// Objectos a instanciar
+	public GameObject ModeloEstadioCibao;
+	public GameObject ModeloCentroLeon;
+	public GameObject ModeloMonumento;
+	public GameObject ModeloAurora;
+	public GameObject ModeloTeatro;
+	public GameObject ModeloCatedral;
+	public GameObject ModeloCampDavid;
+	public GameObject ModeloParqueCentral;
+	public GameObject ModeloFortaleza;
 	// Modelo instanceado
 	GameObject modeloInstanceado;
+	public GameObject cube;
 	
-    // Start is called before the first frame update
-	private void Start()
+    // Update is called once per frame
+  void Update()
 	{
-		// Encuentro el objeto con el componente ArRaycastManager
-		losRayos = FindObjectOfType<ARRaycastManager>();
+		//if (modeloInstanceado != null) {
+			// TODO: PROBAR CON UN CUBE EN LUAGR DE LOS MODELOS
+			//Vector3 position = new Vector3(0.0f, -0.5f, 1.0f);
+			//Quaternion rotation = new Quaternion(0.0f, 0.0f, 0.0f, 0.0f);
+			//modeloInstanceado = Instantiate(cube, position, rotation);
+			//Handheld.Vibrate();
+		//}
 	}
 
-    // Update is called once per frame
-    void Update()
-	{
-		// creo una lista de Hits de radio
-		List<ARRaycastHit> hit = new List<ARRaycastHit>();
+	public void instancearModelo(string modeloSeleccionado, Vector3 position, Quaternion rotation) {
+		//Vector3 position = new Vector3(0.0f, -0.5f, 1.0f);
+		//Quaternion rotation = new Quaternion(0.0f, 0.0f, 0.0f, 0.0f);
 
-		// Emito rayos desde el centro de la pantalla
-		losRayos.Raycast(new Vector2(Screen.width / 2, Screen.height / 2), hit, TrackableType.Planes);
-		// si el rayo choca con un plano rntonces
-		if (hit.Count > 0 && modeloInstanceado != null)
-		{
-			var position = hit[0].pose.position;
-			var rotation = hit[0].pose.rotation;
-			modeloInstanceado = Instantiate(modelo, position, rotation);
-			Handheld.Vibrate();
+		switch(modeloSeleccionado) {
+		case "estadio_cibao":
+			modeloInstanceado = Instantiate(cube, position, rotation);
+			break;
+		case "centro_leon":
+			modeloInstanceado = Instantiate(cube, position, rotation);
+			break;
+		case "monumento":
+			modeloInstanceado = Instantiate(cube, position, rotation);
+			break;
+		case "aurora":
+			modeloInstanceado = Instantiate(cube, position, rotation);
+			break;
+		case "teatro":
+			modeloInstanceado = Instantiate(cube, position, rotation);
+			break;
+		case "catedral":
+			modeloInstanceado = Instantiate(cube, position, rotation);
+			break;
+		case "fortaleza":
+			modeloInstanceado = Instantiate(cube, position, rotation);
+			break;
+		case "matum":
+			modeloInstanceado = Instantiate(cube, position, rotation);
+			break;
+		case "camp_david":
+			modeloInstanceado = Instantiate(cube, position, rotation);
+			break;
+		case "parque_central":
+			modeloInstanceado = Instantiate(cube, position, rotation);
+			break;
+		default:
+			Debug.Log("Modelo Seleccionado no encontrado");
+			break;
+
 		}
-    }
+	}
+    
+	public void destroyModeloInstanceado () {
+		Destroy(modeloInstanceado, 0f);
+	}
 }

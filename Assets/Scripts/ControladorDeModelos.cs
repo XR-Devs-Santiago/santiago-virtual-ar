@@ -11,11 +11,13 @@ public class ControladorDeModelos : MonoBehaviour
 	public GameObject panelModeloSeleccionado;
 	public Instanciador instanciador;
 	GameObject ModeloSeleccionadoManager;
+	GameObject InstanciadorDeModeloManager;
 	
 	// Start is called on the frame when a script is enabled just before any of the Update methods is called the first time.
 	protected void Start()
 	{
 		ModeloSeleccionadoManager = GameObject.Find("ModeloSeleccionadoManager");
+		InstanciadorDeModeloManager = GameObject.Find("InstanciadorDeModeloManager");
 	}
 
 	// OnMouseDown es llamado cuando el usuario preciona el boton del mouse o al toque de un objecto que tenga el component collider. El GameObject debe tener algun tipo de collider para que esta funcion funcione.
@@ -32,68 +34,70 @@ public class ControladorDeModelos : MonoBehaviour
 		}
 		GameObject canvas = GameObject.Find("Canvas");
 		var panelModeloSeleccionado = canvas.transform.GetChild(4).gameObject;
+		Vector3 position = instanciador.obj1.transform.position;
+		Quaternion rotation = instanciador.obj1.transform.rotation;
 
 		switch(modeloSeleccionado) {
 			case "estadio_cibao":
 				ValoresGlobales.modelo_seleccionado = Modelos.estadio_cibao;
 				panelModeloSeleccionado.SetActive(true);
 				ModeloSeleccionadoManager.GetComponent<ModeloSeleccionado>().modeloSelecionado();
-				// Handheld.Vibrate();
+				InstanciadorDeModeloManager.GetComponent<InstanciadorDeModelo>().instancearModelo(modeloSeleccionado, position, rotation);
 				break;
 			case "centro_leon":
 				Debug.Log("centro_leon case");
 				ValoresGlobales.modelo_seleccionado = Modelos.centro_leon;
 				panelModeloSeleccionado.SetActive(true);
 				ModeloSeleccionadoManager.GetComponent<ModeloSeleccionado>().modeloSelecionado();
-				// Handheld.Vibrate();
+				InstanciadorDeModeloManager.GetComponent<InstanciadorDeModelo>().instancearModelo(modeloSeleccionado, position, rotation);
 				break;
 			case "monumento":
 				ValoresGlobales.modelo_seleccionado = Modelos.monumento;
 				panelModeloSeleccionado.SetActive(true);
 				ModeloSeleccionadoManager.GetComponent<ModeloSeleccionado>().modeloSelecionado();
-				// Handheld.Vibrate();
+				InstanciadorDeModeloManager.GetComponent<InstanciadorDeModelo>().instancearModelo(modeloSeleccionado, position, rotation);
 				break;
 			case "aurora":
 				ValoresGlobales.modelo_seleccionado = Modelos.aurora;
 				panelModeloSeleccionado.SetActive(true);
 				ModeloSeleccionadoManager.GetComponent<ModeloSeleccionado>().modeloSelecionado();
-				// Handheld.Vibrate();
+				InstanciadorDeModeloManager.GetComponent<InstanciadorDeModelo>().instancearModelo(modeloSeleccionado, position, rotation);
 				break;
 			case "teatro":
 				ValoresGlobales.modelo_seleccionado = Modelos.teatro;
 				panelModeloSeleccionado.SetActive(true);
 				ModeloSeleccionadoManager.GetComponent<ModeloSeleccionado>().modeloSelecionado();
-				// Handheld.Vibrate();
+				InstanciadorDeModeloManager.GetComponent<InstanciadorDeModelo>().instancearModelo(modeloSeleccionado, position, rotation);
 				break;
 			case "catedral":
 				ValoresGlobales.modelo_seleccionado = Modelos.catedral;
 				panelModeloSeleccionado.SetActive(true);
 				ModeloSeleccionadoManager.GetComponent<ModeloSeleccionado>().modeloSelecionado();
-				// Handheld.Vibrate();
+				InstanciadorDeModeloManager.GetComponent<InstanciadorDeModelo>().instancearModelo(modeloSeleccionado, position, rotation);
 				break;
 			case "fortaleza":
 				ValoresGlobales.modelo_seleccionado = Modelos.fortaleza;
 				panelModeloSeleccionado.SetActive(true);
 				ModeloSeleccionadoManager.GetComponent<ModeloSeleccionado>().modeloSelecionado();
-				// Handheld.Vibrate();
+				InstanciadorDeModeloManager.GetComponent<InstanciadorDeModelo>().instancearModelo(modeloSeleccionado, position, rotation);
 				break;
 			case "matum":
 				ValoresGlobales.modelo_seleccionado = Modelos.matum;
 				panelModeloSeleccionado.SetActive(true);
 				ModeloSeleccionadoManager.GetComponent<ModeloSeleccionado>().modeloSelecionado();
-				// Handheld.Vibrate();
+				InstanciadorDeModeloManager.GetComponent<InstanciadorDeModelo>().instancearModelo(modeloSeleccionado, position, rotation);
 				break;
 			case "camp_david":
 				ValoresGlobales.modelo_seleccionado = Modelos.camp_david;
 				panelModeloSeleccionado.SetActive(true);
 				ModeloSeleccionadoManager.GetComponent<ModeloSeleccionado>().modeloSelecionado();
-				// Handheld.Vibrate();
+				InstanciadorDeModeloManager.GetComponent<InstanciadorDeModelo>().instancearModelo(modeloSeleccionado, position, rotation);
 				break;
 			case "parque_central":
 				ValoresGlobales.modelo_seleccionado = Modelos.parque_central;
 				panelModeloSeleccionado.SetActive(true);
 				ModeloSeleccionadoManager.GetComponent<ModeloSeleccionado>().modeloSelecionado();
-				// Handheld.Vibrate();
+				InstanciadorDeModeloManager.GetComponent<InstanciadorDeModelo>().instancearModelo(modeloSeleccionado, position, rotation);
 				break;
 			default:
 				Debug.Log("Modelo Seleccionado no encontrado");
@@ -101,7 +105,7 @@ public class ControladorDeModelos : MonoBehaviour
 
 		}
 
-		if (instanciador) {
+		if (instanciador != null) {
 			instanciador.destroySantiago3D();
 		}
 	}

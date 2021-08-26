@@ -13,7 +13,7 @@ public class Instanciador : MonoBehaviour
 	// El indicador, donde lo instanciamos
 	Indicador ElIndicador;
 	// Objecto instanceado
-	GameObject obj1;
+	public GameObject obj1;
 
     // Start is called before the first frame update
     void Start()
