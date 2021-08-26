@@ -26,17 +26,15 @@ public class ControladorDeModelos : MonoBehaviour
 	}
 
 	public void seleccionarModelo() {
-		GameObject backButton = GameObject.Find("btn - Atras de panel principal");
+		GameObject panelPrincipal = GameObject.Find("03 - PanelPrincipal");
 		GameObject i = GameObject.Find("Instanciador");
 		Instanciador instanciador = (Instanciador) i.GetComponent(typeof(Instanciador));
-		if (backButton != null) {
-			backButton.SetActive(false);
+		if (panelPrincipal != null) {
+			panelPrincipal.SetActive(false);
 		}
 		GameObject canvas = GameObject.Find("Canvas");
 		var panelModeloSeleccionado = canvas.transform.GetChild(4).gameObject;
 		Vector3 position = instanciador.obj1.transform.position;
-		//Quaternion rotation = instanciador.obj1.transform.rotation;
-		//Quaternion rotation = new Quaternion(0.0f, 280.0f, 0.0f, 0.0f);
 
 		switch(modeloSeleccionado) {
 			case "estadio_cibao":
