@@ -35,69 +35,70 @@ public class ControladorDeModelos : MonoBehaviour
 		GameObject canvas = GameObject.Find("Canvas");
 		var panelModeloSeleccionado = canvas.transform.GetChild(4).gameObject;
 		Vector3 position = instanciador.obj1.transform.position;
-		Quaternion rotation = instanciador.obj1.transform.rotation;
+		//Quaternion rotation = instanciador.obj1.transform.rotation;
+		//Quaternion rotation = new Quaternion(0.0f, 280.0f, 0.0f, 0.0f);
 
 		switch(modeloSeleccionado) {
 			case "estadio_cibao":
 				ValoresGlobales.modelo_seleccionado = Modelos.estadio_cibao;
 				panelModeloSeleccionado.SetActive(true);
 				ModeloSeleccionadoManager.GetComponent<ModeloSeleccionado>().modeloSelecionado();
-				InstanciadorDeModeloManager.GetComponent<InstanciadorDeModelo>().instancearModelo(modeloSeleccionado, position, rotation);
+				InstanciadorDeModeloManager.GetComponent<InstanciadorDeModelo>().instancearModelo(modeloSeleccionado, position);
 				break;
 			case "centro_leon":
 				Debug.Log("centro_leon case");
 				ValoresGlobales.modelo_seleccionado = Modelos.centro_leon;
 				panelModeloSeleccionado.SetActive(true);
 				ModeloSeleccionadoManager.GetComponent<ModeloSeleccionado>().modeloSelecionado();
-				InstanciadorDeModeloManager.GetComponent<InstanciadorDeModelo>().instancearModelo(modeloSeleccionado, position, rotation);
+				InstanciadorDeModeloManager.GetComponent<InstanciadorDeModelo>().instancearModelo(modeloSeleccionado, position);
 				break;
 			case "monumento":
 				ValoresGlobales.modelo_seleccionado = Modelos.monumento;
 				panelModeloSeleccionado.SetActive(true);
 				ModeloSeleccionadoManager.GetComponent<ModeloSeleccionado>().modeloSelecionado();
-				InstanciadorDeModeloManager.GetComponent<InstanciadorDeModelo>().instancearModelo(modeloSeleccionado, position, rotation);
+				InstanciadorDeModeloManager.GetComponent<InstanciadorDeModelo>().instancearModelo(modeloSeleccionado, position);
 				break;
 			case "aurora":
 				ValoresGlobales.modelo_seleccionado = Modelos.aurora;
 				panelModeloSeleccionado.SetActive(true);
 				ModeloSeleccionadoManager.GetComponent<ModeloSeleccionado>().modeloSelecionado();
-				InstanciadorDeModeloManager.GetComponent<InstanciadorDeModelo>().instancearModelo(modeloSeleccionado, position, rotation);
+				InstanciadorDeModeloManager.GetComponent<InstanciadorDeModelo>().instancearModelo(modeloSeleccionado, position);
 				break;
 			case "teatro":
 				ValoresGlobales.modelo_seleccionado = Modelos.teatro;
 				panelModeloSeleccionado.SetActive(true);
 				ModeloSeleccionadoManager.GetComponent<ModeloSeleccionado>().modeloSelecionado();
-				InstanciadorDeModeloManager.GetComponent<InstanciadorDeModelo>().instancearModelo(modeloSeleccionado, position, rotation);
+				InstanciadorDeModeloManager.GetComponent<InstanciadorDeModelo>().instancearModelo(modeloSeleccionado, position);
 				break;
 			case "catedral":
 				ValoresGlobales.modelo_seleccionado = Modelos.catedral;
 				panelModeloSeleccionado.SetActive(true);
 				ModeloSeleccionadoManager.GetComponent<ModeloSeleccionado>().modeloSelecionado();
-				InstanciadorDeModeloManager.GetComponent<InstanciadorDeModelo>().instancearModelo(modeloSeleccionado, position, rotation);
+				InstanciadorDeModeloManager.GetComponent<InstanciadorDeModelo>().instancearModelo(modeloSeleccionado, position);
 				break;
 			case "fortaleza":
 				ValoresGlobales.modelo_seleccionado = Modelos.fortaleza;
 				panelModeloSeleccionado.SetActive(true);
 				ModeloSeleccionadoManager.GetComponent<ModeloSeleccionado>().modeloSelecionado();
-				InstanciadorDeModeloManager.GetComponent<InstanciadorDeModelo>().instancearModelo(modeloSeleccionado, position, rotation);
+				InstanciadorDeModeloManager.GetComponent<InstanciadorDeModelo>().instancearModelo(modeloSeleccionado, position);
 				break;
 			case "matum":
 				ValoresGlobales.modelo_seleccionado = Modelos.matum;
 				panelModeloSeleccionado.SetActive(true);
 				ModeloSeleccionadoManager.GetComponent<ModeloSeleccionado>().modeloSelecionado();
-				InstanciadorDeModeloManager.GetComponent<InstanciadorDeModelo>().instancearModelo(modeloSeleccionado, position, rotation);
+				InstanciadorDeModeloManager.GetComponent<InstanciadorDeModelo>().instancearModelo(modeloSeleccionado, position);
 				break;
 			case "camp_david":
 				ValoresGlobales.modelo_seleccionado = Modelos.camp_david;
 				panelModeloSeleccionado.SetActive(true);
 				ModeloSeleccionadoManager.GetComponent<ModeloSeleccionado>().modeloSelecionado();
-				InstanciadorDeModeloManager.GetComponent<InstanciadorDeModelo>().instancearModelo(modeloSeleccionado, position, rotation);
+				InstanciadorDeModeloManager.GetComponent<InstanciadorDeModelo>().instancearModelo(modeloSeleccionado, position);
 				break;
 			case "parque_central":
 				ValoresGlobales.modelo_seleccionado = Modelos.parque_central;
 				panelModeloSeleccionado.SetActive(true);
 				ModeloSeleccionadoManager.GetComponent<ModeloSeleccionado>().modeloSelecionado();
-				InstanciadorDeModeloManager.GetComponent<InstanciadorDeModelo>().instancearModelo(modeloSeleccionado, position, rotation);
+				InstanciadorDeModeloManager.GetComponent<InstanciadorDeModelo>().instancearModelo(modeloSeleccionado, position);
 				break;
 			default:
 				Debug.Log("Modelo Seleccionado no encontrado");

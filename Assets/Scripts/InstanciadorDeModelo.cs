@@ -16,54 +16,40 @@ public class InstanciadorDeModelo : MonoBehaviour
 	public GameObject ModeloFortaleza;
 	// Modelo instanceado
 	GameObject modeloInstanceado;
-	public GameObject cube;
-	
-    // Update is called once per frame
-  void Update()
-	{
-		//if (modeloInstanceado != null) {
-			// TODO: PROBAR CON UN CUBE EN LUAGR DE LOS MODELOS
-			//Vector3 position = new Vector3(0.0f, -0.5f, 1.0f);
-			//Quaternion rotation = new Quaternion(0.0f, 0.0f, 0.0f, 0.0f);
-			//modeloInstanceado = Instantiate(cube, position, rotation);
-			//Handheld.Vibrate();
-		//}
-	}
 
-	public void instancearModelo(string modeloSeleccionado, Vector3 position, Quaternion rotation) {
-		//Vector3 position = new Vector3(0.0f, -0.5f, 1.0f);
-		//Quaternion rotation = new Quaternion(0.0f, 0.0f, 0.0f, 0.0f);
+	public void instancearModelo(string modeloSeleccionado, Vector3 position) {
+		Destroy(modeloInstanceado, 0f);
 
 		switch(modeloSeleccionado) {
 		case "estadio_cibao":
-			modeloInstanceado = Instantiate(cube, position, rotation);
+			modeloInstanceado = Instantiate(ModeloEstadioCibao, position, ModeloEstadioCibao.transform.rotation);
 			break;
 		case "centro_leon":
-			modeloInstanceado = Instantiate(cube, position, rotation);
+			modeloInstanceado = Instantiate(ModeloCentroLeon, position, ModeloCentroLeon.transform.rotation);
 			break;
 		case "monumento":
-			modeloInstanceado = Instantiate(cube, position, rotation);
+			modeloInstanceado = Instantiate(ModeloMonumento, position, ModeloMonumento.transform.rotation);
 			break;
 		case "aurora":
-			modeloInstanceado = Instantiate(cube, position, rotation);
+			modeloInstanceado = Instantiate(ModeloAurora, position, ModeloAurora.transform.rotation);
 			break;
 		case "teatro":
-			modeloInstanceado = Instantiate(cube, position, rotation);
+			modeloInstanceado = Instantiate(ModeloTeatro, position, ModeloTeatro.transform.rotation);
 			break;
 		case "catedral":
-			modeloInstanceado = Instantiate(cube, position, rotation);
+			modeloInstanceado = Instantiate(ModeloCatedral, position, ModeloCatedral.transform.rotation);
 			break;
 		case "fortaleza":
-			modeloInstanceado = Instantiate(cube, position, rotation);
+			modeloInstanceado = Instantiate(ModeloFortaleza, position, ModeloFortaleza.transform.rotation);
 			break;
 		case "matum":
-			modeloInstanceado = Instantiate(cube, position, rotation);
+			modeloInstanceado = Instantiate(ModeloCampDavid, position, ModeloCampDavid.transform.rotation);
 			break;
 		case "camp_david":
-			modeloInstanceado = Instantiate(cube, position, rotation);
+			modeloInstanceado = Instantiate(ModeloCampDavid, position, ModeloCampDavid.transform.rotation);
 			break;
 		case "parque_central":
-			modeloInstanceado = Instantiate(cube, position, rotation);
+			modeloInstanceado = Instantiate(ModeloParqueCentral, position, ModeloParqueCentral.transform.rotation);
 			break;
 		default:
 			Debug.Log("Modelo Seleccionado no encontrado");
