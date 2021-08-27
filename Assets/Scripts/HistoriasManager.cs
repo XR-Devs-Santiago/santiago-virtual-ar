@@ -13,8 +13,8 @@ public class HistoriasManager : MonoBehaviour
 	//variables para el botón de personajes y el texto conoce sus personajes
 	public GameObject boton_personajes, conoce_sus_personajes;
 	
-	// Start is called on the frame when a script is enabled just before any of the Update methods is called the first time.
-	protected void Start()
+	// Update is called every frame, if the MonoBehaviour is enabled.
+	protected void Update()
 	{
 		activar_panel_historia();
 	}
