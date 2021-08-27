@@ -52,6 +52,5 @@ public class GoogleMaps : MonoBehaviour
 		}
 
 		Application.OpenURL(Location);
-	}
-		
+	}	
 }
