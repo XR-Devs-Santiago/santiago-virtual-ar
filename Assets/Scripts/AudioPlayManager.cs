@@ -54,4 +54,11 @@ public class AudioPlayManager : MonoBehaviour
     {
         
     }
+    
+	public void DesactivarAudio()
+	{
+		_source.clip = null;
+		reproduciendo = false;
+		boton.gameObject.GetComponent<Image>().sprite = play;
+	}
 }
