@@ -27145,15 +27145,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d69fb246b9e4745cfa2091f27d1911c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  personajesMonumento: {fileID: 0}
-  personajesAurora: {fileID: 0}
-  personajesTeatro: {fileID: 0}
-  btnAnteriorSiguiente: {fileID: 0}
-  btnAnterior: {fileID: 0}
-  btnSiguiente: {fileID: 0}
-  arregloPersonajesMonumento: []
+  personajesMonumento: {fileID: 1950980289}
+  personajesAurora: {fileID: 1109927394}
+  personajesTeatro: {fileID: 702739477}
+  btnAnteriorSiguiente: {fileID: 1390331005}
+  btnAnterior: {fileID: 237754667}
+  btnSiguiente: {fileID: 674284365}
+  arregloPersonajesMonumento:
+  - {fileID: 1262438660}
+  - {fileID: 299012007}
+  - {fileID: 1572518375}
   personaje: {fileID: 0}
-  manager: {fileID: 0}
+  manager: {fileID: 40871659}
   index: 0
 --- !u!1 &1018616720
 GameObject:
@@ -33143,6 +33146,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 2027865747}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2027865749}
+        m_TargetAssemblyTypeName: Personajes, Assembly-CSharp
+        m_MethodName: mostrarPersonajesDelLugar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

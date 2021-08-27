@@ -37,7 +37,7 @@ public class Personajes : MonoBehaviour
 		manager.mostrarPanel(manager.panelPersonajes);
 	
 		// Mostrar personaje(s) del lugar seleccionado al presionar boton desde el panel Historia:
-		mostrarPersonajesDelLugar();
+		//mostrarPersonajesDelLugar();
 		
 	}
 	/// <summary>
@@ -92,12 +92,17 @@ public class Personajes : MonoBehaviour
 		
 		//Activamos nuevamente los botones
 		btnAnteriorSiguiente.SetActive(true);
+		personajesMonumento.SetActive(false);
+		personajesAurora.SetActive(false);
+		personajesTeatro.SetActive(false);
 		
 		// Determinamos cuales personajes se activan de acuerdo a ese lugar
 		switch(lugar){
 			
 		case Modelos.monumento:
 			personajesMonumento.SetActive(true);
+			Debug.Log(personajesMonumento);
+
 			// Sse abre la mecanica para los botones next/previous
 			break;
 			 	
