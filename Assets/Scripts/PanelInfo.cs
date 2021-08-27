@@ -14,14 +14,12 @@ public class PanelInfo : MonoBehaviour
 	public GameObject CampDavidInfo;
 	public GameObject ParqueCentralInfo;
 	public GameObject CentroLeonInfo;
-
 	
-	// Start is called on the frame when a script is enabled just before any of the Update methods is called the first time.
-	protected void Start()
+	protected void Update()
 	{
 		modeloSeleccionado();
 	}
-	
+
 	public void showPanel(GameObject panelToShow){
 		
 		MonumentoInfo.SetActive(false);
