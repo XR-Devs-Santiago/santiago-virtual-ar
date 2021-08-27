@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -18473,7 +18473,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &779547980
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19448,13 +19448,14 @@ GameObject:
   - component: {fileID: 804993856}
   - component: {fileID: 804993858}
   - component: {fileID: 804993857}
+  - component: {fileID: 804993859}
   m_Layer: 5
   m_Name: auroraCigarWorld
-  m_TagString: Untagged
+  m_TagString: AmbientalSound
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &804993856
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19515,6 +19516,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804993855}
   m_CullTransparentMesh: 1
+--- !u!114 &804993859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804993855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8178c1b51b8b4c4ab5c554b0bb3e258, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audio_clip: {fileID: 8300000, guid: b90434099177d95478564b6e460b25eb, type: 3}
+  audio_source: {fileID: 0}
+  PanelAurora: {fileID: 804993855}
 --- !u!1 &806868421
 GameObject:
   m_ObjectHideFlags: 0
@@ -22735,16 +22751,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8364a9319a907f34785719c6bd9ce973, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  personajesMonumento: {fileID: 0}
-  personajesAurora: {fileID: 0}
-  personajesTeatro: {fileID: 0}
-  btnAnteriorSiguiente: {fileID: 0}
-  btnAnterior: {fileID: 0}
-  btnSiguiente: {fileID: 0}
-  arregloPersonajesMonumento: []
-  personaje: {fileID: 0}
-  manager: {fileID: 0}
-  index: 0
 --- !u!1 &906576098
 GameObject:
   m_ObjectHideFlags: 0
@@ -28599,9 +28605,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 11500000, guid: 8a17c8a95bbed244cad5cf1f4c9e83cc, type: 3}
         m_TargetAssemblyTypeName: Personajes, Assembly-CSharp
-        m_MethodName: next
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -37181,21 +37187,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da9c313f44d1daa468140bfc27a90885, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelPrincipal: {fileID: 0}
-  panelPrincipalMecanica: {fileID: 0}
-  panelModeloSeleccionado: {fileID: 0}
-  panelInformacion: {fileID: 0}
-  panelHistoria: {fileID: 0}
-  panelPersonajes: {fileID: 0}
-  panelModeloEstadio: {fileID: 0}
-  panelModeloCentroLeon: {fileID: 0}
-  panelModeloMonumento: {fileID: 0}
-  panelModeloAurora: {fileID: 0}
-  panelModeloTeatro: {fileID: 0}
-  panelModeloCatedral: {fileID: 0}
-  panelModeloCampDavid: {fileID: 0}
-  panelModeloMatum: {fileID: 0}
-  panelModeloParqueCentral: {fileID: 0}
 --- !u!4 &1617174999
 Transform:
   m_ObjectHideFlags: 0
